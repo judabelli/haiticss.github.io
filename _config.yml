@@ -3,3 +3,6 @@ markdown: kramdown
 
 gems: ['jekyll-github-metadata']
 repository: haiticss/haiticss.github.io
+
+url: https://haiticss.io
+enforce_ssl: haiticss.io
