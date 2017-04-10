@@ -1,0 +1,5 @@
+name: HaitiCSS
+markdown: kramdown
+
+gems: ['jekyll-github-metadata']
+repository: haiticss/haiticss.github.io

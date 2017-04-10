@@ -1,0 +1,33 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+
+# Jekyll site
+_site/
+
+#Github token
+.ghtoken
+
+# Node Modules
+node_modules/
+npm-debug.log
+
+# Bower Components
+bower_components/
+
+# Sass/Scss Cache
+.sass-cache/
+
+# JetBrains IDEs projects
+.idea/
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes

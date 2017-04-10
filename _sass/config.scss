@@ -1,0 +1,12 @@
+
+/* ==========================================================================
+ * SETTINGS
+ * Project configuration, functions and variables
+ *
+ * core ................... Core and setup settings
+ * config ................. Global configuration: env, paths
+ * core functions ......... SASS core functions (core- prefixed)
+ * foundations ............ Design foundations vars
+   ========================================================================== */
+
+$s-config__env:                       "prod" !default;
