@@ -1,0 +1,38 @@
+
+.c-leading-header {
+  margin-bottom: $s-space--large;
+  padding-top: $s-space--small;
+  padding-bottom: $s-space--small;
+  background-color: $s-color__brand-primary--dark;
+  color: $s-color__brand-primary--ultra-light;
+
+  @include mq($from: "sm") {
+    padding-top: $s-space;
+  }
+}
+
+.c-leading-header__brand {
+  font-size: 3.5rem;
+  @include mq($from: "xs") {
+    font-size: 5rem;
+  }
+}
+
+.c-leading-header__logo {
+  font-size: 5rem;
+  letter-spacing: -.8rem;
+  @include mq($from: "xs") {
+    font-size: 7rem;
+    letter-spacing: -1rem;
+  }
+}
+
+.c-leading-header__details {
+  text-align: right;
+  font-size: $s-font-size--s;
+  margin-bottom: $g-reset__spacing--vertical;
+}
+
+.c-leading-header__icon {
+  fill: $s-color__brand-primary--ultra-light;
+}

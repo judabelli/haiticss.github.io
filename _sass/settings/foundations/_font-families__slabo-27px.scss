@@ -1,0 +1,17 @@
+
+// https://fonts.google.com/specimen/Slabo+27px
+
+$s-font-family__slabo-27px:               'Slabo 27px' !default;
+
+@font-face {
+  font-family: $s-font-family__slabo-27px;
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$s-config__path--fonts}/slabo-27px/slabo-27px-v3-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Slabo 27px'), local('Slabo27px-Regular'),
+  url('#{$s-config__path--fonts}/slabo-27px/slabo-27px-v3-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('#{$s-config__path--fonts}/slabo-27px/slabo-27px-v3-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('#{$s-config__path--fonts}/slabo-27px/slabo-27px-v3-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('#{$s-config__path--fonts}/slabo-27px/slabo-27px-v3-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('#{$s-config__path--fonts}/slabo-27px/slabo-27px-v3-latin-regular.svg#Slabo27px') format('svg'); /* Legacy iOS */
+}

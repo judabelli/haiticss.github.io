@@ -23,15 +23,41 @@
  *
  */
 
-@import "config";
+@import "settings/settings__config";
+
+@import "haiticss/01-settings/settings__core";
+@import "haiticss/01-settings/settings__config";
+
+@import "settings/core-functions/map-diff";
+@import "settings/settings__foundations";
 
 @import "haiticss/01-settings/settings";
 @import "haiticss/02-tools/tools";
 @import "haiticss/03-generic/generic";
 @import "haiticss/04-elements/elements";
 @import "haiticss/05-objects/objects";
+
+@import "material/material";
+
+@import "components/footer";
+@import "components/header";
+@import "components/leading-header";
+
+@import "templates/home";
+
 @import "haiticss/99-utilities/utilities";
 
+html {
+  background-color: $s-color__brand-primary--ultra-light;
+}
+
+a {
+  color: $s-color__brand-primary--dark;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
 .u-pv--large {
   padding-bottom: $s-space--large !important;

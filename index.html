@@ -4,9 +4,22 @@ template: t-home
 title: HaitiCSS
 ---
 
+<section class="t-home__section">
 
-<h1>&#127821; haiticss</h1>
+    <p>Just another baseline perspective to wear any project with the <a href="http://itcss.io/">ITCSS</a> architecture. Mainly based on the excellent project <a href="https://github.com/inuitcss/inuitcss">inuitcss</a> by <a href="https://csswizardry.com/">Harry Roberts</a>, from where we found our best suitable starting point.</p>
+    <p>The idea to create this project, started from the necessity to adding some modifications and missing features on INUIT that probably will not fit into the original project roadmap. At the end we added some layers, and a <strong>visual language</strong> into the architecture, helping to build a design system out of the box.</p>
+    <p>Main differences from <a href="https://github.com/inuitcss/inuitcss">inuitcss</a> are:</p>
+    <ul>
+        <li>Number prefixes on CSS layers, helping non familiar developers to get into the architecture hierarchy.</li>
+        <li>Design foundations with a visual language.</li>
+        <li>Namespaced variables to improve compatibility when importing into an existent project.</li>
+        <li>Feature toggling variables to include/exclude any object or utility and prevent unused CSS output.</li>
+        <li>Objects defined as mixin as well to use the magic on components and change the layout thought breakpoints.</li>
+        <li>Added a abstract animations layer.</li>
+        <li>Added a color schemes layer.</li>
+        <li>Added a material layer with base elements, not components, with configuration map variables.</li>
+        <li>Scoped version feature, helping to start old site migrations on the fly, respecting the legacy code, but breaking most risky inheritance.</li>
+    </ul>
+    <p>The project is not mature yet to be used on any production project, but if you're curious, feel free to browse our <a href="https://github.com/haiticss/haiticss">repository</a> and get an overview. Hope you like it &#128540;</p>
 
-<hr>
-
-<p class="u-align-right@">Sooner than later will be ready</p>
+</section>
