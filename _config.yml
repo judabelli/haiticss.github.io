@@ -6,3 +6,6 @@ repository: haiticss/haiticss.github.io
 
 url: https://haiticss.io
 enforce_ssl: haiticss.io
+
+# Google services
+google_analytics: UA-97633338-1
