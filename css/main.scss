@@ -35,7 +35,9 @@
 @import "haiticss/02-tools/tools";
 @import "haiticss/03-generic/generic";
 @import "haiticss/04-elements/elements";
+
 @import "haiticss/05-objects/objects";
+@import "objects/docs";
 
 @import "material/material";
 
@@ -59,7 +61,16 @@ a {
   }
 }
 
+.o-flag__img {
+  > img {
+    width: auto;
+  }
+}
 .u-pv--large {
   padding-bottom: $s-space--large !important;
   padding-top: $s-space--large !important;
+}
+
+.u-mb--large {
+  margin-bottom: $s-space--large !important;
 }

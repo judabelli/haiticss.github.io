@@ -1,0 +1,41 @@
+
+
+.o-crop--debug {
+  overflow: visible;
+  margin-top: $s-space;
+
+  &::before {
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+    @include o-docs__main--txt();
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @include o-docs__main--outline();
+    content: "";
+  }
+
+  /*.o-crop__content {
+    @include o-docs__secondary--outline();
+    @include o-docs__secondary--bg();
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: .5rem;
+      @include o-docs__main--txt();
+    }
+
+    &:empty {
+      min-height: 12rem;
+    }
+  }*/
+
+}

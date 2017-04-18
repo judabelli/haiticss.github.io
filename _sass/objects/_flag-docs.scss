@@ -1,0 +1,27 @@
+
+
+.o-flag--debug {
+  //position: relative;
+  //margin-top: $s-space;
+  @include o-docs__main--outline();
+  @include o-docs__main--bg();
+
+  &::before {
+    display: table-caption;
+    text-align: right;
+    @include o-docs__main--txt();
+  }
+
+  .o-flag__img {
+    > img {
+      @include o-docs__secondary--outline();
+    }
+  }
+
+  .o-flag__body {
+    @include o-docs__secondary--outline();
+    @include o-docs__secondary--bg();
+
+  }
+
+}

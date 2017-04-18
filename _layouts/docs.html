@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="HaitiCSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="{{ page.template }}">
+
+{% include c-header.html %}
+
+<main class="o-wrapper o-wrapper--to@md">
+    {{ content }}
+</main>
+
+{% include c-footer.html %}
+
+</body>
+</html>
