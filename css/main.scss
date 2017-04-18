@@ -61,6 +61,10 @@ a {
   }
 }
 
+p + p {
+  margin-top: $s-space--small * -1;
+}
+
 .o-flag__img {
   > img {
     width: auto;
@@ -71,6 +75,9 @@ a {
   padding-top: $s-space--large !important;
 }
 
+.u-mb--medium {
+  margin-bottom: $s-space--medium !important;
+}
 .u-mb--large {
   margin-bottom: $s-space--large !important;
 }
