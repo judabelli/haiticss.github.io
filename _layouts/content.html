@@ -3,14 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>{{ page.title }}</title>
+    {% include head/title.html %}
+    {% include head/stylesheet.html %}
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-
-    <link rel="stylesheet" href="/css/main.css">
-
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="HaitiCSS">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include head/meta.html %}
 </head>
 
 <body class="{{ page.template }}">
@@ -23,9 +19,6 @@
 
 {% include c-footer.html %}
 
-{% if site.google_analytics and jekyll.environment == 'production' %}
-{% include analytics.html %}
-{% endif %}
-
+{% include scripts/analytics.html %}
 </body>
 </html>

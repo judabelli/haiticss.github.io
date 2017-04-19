@@ -4,6 +4,7 @@ markdown: kramdown
 gems: ['jekyll-github-metadata']
 repository: haiticss/haiticss.github.io
 
+title: HaitiCSS
 url: https://haiticss.io
 enforce_ssl: haiticss.io
 
