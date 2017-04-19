@@ -6,7 +6,7 @@
   background-color: $s-color__brand-primary--dark;
   color: $s-color__brand-primary--ultra-light;
 
-  @include mq($from: "sm") {
+  @include t-mq($from: "sm") {
     padding-top: $s-space;
   }
 }
@@ -23,7 +23,7 @@
 }
 
 .c-header__slogan {
-  @include mq($until: "xs") {
+  @include t-mq($until: "xs") {
     display: none;
   }
 }

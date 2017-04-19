@@ -23,29 +23,42 @@
  *
  */
 
-@import "settings/settings__config";
 
-@import "haiticss/01-settings/settings__core";
-@import "haiticss/01-settings/settings__config";
+/* ==========================================================================
+ * SETTINGS
+ * Project configuration, functions and variables
+ *
+ * core ................... Core and setup settings
+ * config ................. Global configuration: env, paths
+ * core functions ......... SASS core functions (core- prefixed)
+ * foundations ............ Design foundations vars
+   ========================================================================== */
 
-@import "settings/core-functions/map-diff";
-@import "settings/settings__foundations";
+@import "haiticss/01-settings/settings__01-core";
+@import "01-settings/settings__02-config";
+@import "haiticss/01-settings/settings__02-config";
+@import "haiticss/01-settings/settings__03-core-functions";
+@import "01-settings/settings__04-foundations";
+@import "haiticss/01-settings/settings__04-foundations";
 
-@import "haiticss/01-settings/settings";
+/* ==========================================================================
+ * CONTENT
+   ========================================================================== */
+
 @import "haiticss/02-tools/tools";
 @import "haiticss/03-generic/generic";
 @import "haiticss/04-elements/elements";
 
 @import "haiticss/05-objects/objects";
-@import "objects/docs";
+@import "10-objects/docs";
 
-@import "material/material";
+@import "20-material/material";
 
-@import "components/footer";
-@import "components/header";
-@import "components/leading-header";
+@import "21-components/footer";
+@import "21-components/header";
+@import "21-components/leading-header";
 
-@import "templates/home";
+@import "30-templates/home";
 
 @import "haiticss/99-utilities/utilities";
 

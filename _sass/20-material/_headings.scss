@@ -83,7 +83,7 @@ $m-heading__mod-sizes:            (
 @if $m-heading--enabled and $m-heading__mod-sizes--enabled {
   @each $_mod-name, $_mod-properties in $m-heading__mod-sizes {
     .m-heading--#{$_mod-name} {
-      @each $_property, $_value in s-map-diff($m-heading__properties, $_mod-properties) {
+      @each $_property, $_value in s-core-map-diff($m-heading__properties, $_mod-properties) {
         @if (type_of($_value) == "number") and (unit($_value) == "px") {
           $_value: s-core-px-to-rem($_value);
         }
