@@ -34,33 +34,33 @@
  * foundations ............ Design foundations vars
    ========================================================================== */
 
-@import "../_haiticss/01-settings/settings__01-core";
-@import "../_sass/01-settings/settings__02-config";
-@import "../_haiticss/01-settings/settings__02-config";
-@import "../_haiticss/01-settings/settings__03-core-functions";
-@import "../_sass/01-settings/settings__04-foundations";
-@import "../_haiticss/01-settings/settings__04-foundations";
+@import "{{site.haiticss-path}}01-settings/settings__01-core";
+@import "01-settings/settings__02-config";
+@import "{{site.haiticss-path}}01-settings/settings__02-config";
+@import "{{site.haiticss-path}}01-settings/settings__03-core-functions";
+@import "01-settings/settings__04-foundations";
+@import "{{site.haiticss-path}}01-settings/settings__04-foundations";
 
 /* ==========================================================================
  * CONTENT
    ========================================================================== */
 
-@import "../_haiticss/02-tools/tools";
-@import "../_haiticss/03-generic/generic";
-@import "../_haiticss/04-elements/elements";
+@import "{{site.haiticss-path}}02-tools/tools";
+@import "{{site.haiticss-path}}03-generic/generic";
+@import "{{site.haiticss-path}}04-elements/elements";
 
-@import "../_haiticss/05-objects/objects";
-@import "../_sass/10-objects/docs";
+@import "{{site.haiticss-path}}05-objects/objects";
+@import "10-objects/docs";
 
-@import "../_sass/20-material/material";
+@import "20-material/material";
 
-@import "../_sass/21-components/footer";
-@import "../_sass/21-components/header";
-@import "../_sass/21-components/leading-header";
+@import "21-components/footer";
+@import "21-components/header";
+@import "21-components/leading-header";
 
-@import "../_sass/30-templates/home";
+@import "30-templates/home";
 
-@import "../_haiticss/99-utilities/utilities";
+@import "{{site.haiticss-path}}99-utilities/utilities";
 
 html {
   background-color: $s-color__brand-primary--ultra-light;
