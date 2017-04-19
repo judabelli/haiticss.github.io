@@ -34,33 +34,33 @@
  * foundations ............ Design foundations vars
    ========================================================================== */
 
-@import "haiticss/01-settings/settings__01-core";
-@import "01-settings/settings__02-config";
-@import "haiticss/01-settings/settings__02-config";
-@import "haiticss/01-settings/settings__03-core-functions";
-@import "01-settings/settings__04-foundations";
-@import "haiticss/01-settings/settings__04-foundations";
+@import "../_haiticss/01-settings/settings__01-core";
+@import "../_sass/01-settings/settings__02-config";
+@import "../_haiticss/01-settings/settings__02-config";
+@import "../_haiticss/01-settings/settings__03-core-functions";
+@import "../_sass/01-settings/settings__04-foundations";
+@import "../_haiticss/01-settings/settings__04-foundations";
 
 /* ==========================================================================
  * CONTENT
    ========================================================================== */
 
-@import "haiticss/02-tools/tools";
-@import "haiticss/03-generic/generic";
-@import "haiticss/04-elements/elements";
+@import "../_haiticss/02-tools/tools";
+@import "../_haiticss/03-generic/generic";
+@import "../_haiticss/04-elements/elements";
 
-@import "haiticss/05-objects/objects";
-@import "10-objects/docs";
+@import "../_haiticss/05-objects/objects";
+@import "../_sass/10-objects/docs";
 
-@import "20-material/material";
+@import "../_sass/20-material/material";
 
-@import "21-components/footer";
-@import "21-components/header";
-@import "21-components/leading-header";
+@import "../_sass/21-components/footer";
+@import "../_sass/21-components/header";
+@import "../_sass/21-components/leading-header";
 
-@import "30-templates/home";
+@import "../_sass/30-templates/home";
 
-@import "haiticss/99-utilities/utilities";
+@import "../_haiticss/99-utilities/utilities";
 
 html {
   background-color: $s-color__brand-primary--ultra-light;
