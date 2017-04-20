@@ -13,3 +13,9 @@ haiticss-path: ../_haiticss/
 
 # Google services
 google_analytics: UA-97633338-1
+
+# Collections
+collections:
+  docs-objects:
+    output: true
+    permalink: /docs/objects/:name
