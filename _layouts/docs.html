@@ -7,14 +7,22 @@
     {% include head/stylesheet.html %}
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
     {% include head/meta.html %}
+    {% include scripts/header.html %}
 </head>
 
 <body class="{{ page.template }}">
 
 {% include c-header.html %}
 
-<main class="o-wrapper o-wrapper--to@md">
-    {{ content }}
+<main class="o-wrapper o-wrapper--from@lg o-wrapper--to@lg">
+    <div class="o-layout">
+        <div class="o-layout__item u-1/4@md">
+            {% include c-docs__navigation.html %}
+        </div>
+        <div class="o-layout__item u-3/4@md">
+            {{ content }}
+        </div>
+    </div>
 </main>
 
 {% include c-footer.html %}

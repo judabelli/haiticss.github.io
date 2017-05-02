@@ -1,11 +1,11 @@
 
 // https://fonts.google.com/specimen/Roboto
 
-$s-font-family__roboto:               'Roboto' !default;
+$f-font-family__roboto:               'Roboto' !default;
 
 /* roboto-regular - latin */
 @font-face {
-  font-family: $s-font-family__roboto;
+  font-family: $f-font-family__roboto;
   font-style: normal;
   font-weight: 400;
   src: url('#{$s-config__path--fonts}/roboto/roboto-v15-latin-regular.eot'); /* IE9 Compat Modes */
@@ -19,7 +19,7 @@ $s-font-family__roboto:               'Roboto' !default;
 
 /* roboto-italic - latin */
 @font-face {
-  font-family: $s-font-family__roboto;
+  font-family: $f-font-family__roboto;
   font-style: italic;
   font-weight: 400;
   src: url('#{$s-config__path--fonts}/roboto/roboto-v15-latin-italic.eot'); /* IE9 Compat Modes */
@@ -33,7 +33,7 @@ $s-font-family__roboto:               'Roboto' !default;
 
 /* roboto-700 - latin */
 @font-face {
-  font-family: $s-font-family__roboto;
+  font-family: $f-font-family__roboto;
   font-style: normal;
   font-weight: 700;
   src: url('#{$s-config__path--fonts}/roboto/roboto-v15-latin-700.eot'); /* IE9 Compat Modes */

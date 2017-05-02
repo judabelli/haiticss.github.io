@@ -18,19 +18,19 @@ $o-docs--enabled:                         true !default;
 $o-docs__border--width:                   2px;
 $o-docs__border--style:                   dashed;
 
-$o-docs__font-family:                     $s-font-family__accent;
+$o-docs__font-family:                     $f-font-family__accent;
 $o-docs__font-size:                       $e-document__body--font-size;
 $o-docs__font-weight:                     700;
-$o-docs__font-color:                      $s-color__brand-primary--dark;
+$o-docs__font-color:                      $f-color__brand-primary--dark;
 
-$o-docs__main--bg-color:                  rgba($s-color__brand-primary, .1) !default;
-$o-docs__main--border-color:              $s-color__brand-primary !default;
-$o-docs__main--text-color:                $s-color__brand-primary !default;
+$o-docs__main--bg-color:                  rgba($f-color__brand-primary, .1) !default;
+$o-docs__main--border-color:              $f-color__brand-primary !default;
+$o-docs__main--text-color:                $f-color__brand-primary !default;
 
-//$o-docs__secondary--bg-color:             $s-color__brand-primary--ultra-light !default;
-$o-docs__secondary--bg-color:             mix(#fff, $s-color__brand-primary--ultra-light, 70%) !default;
-$o-docs__secondary--border-color:         $s-color__brand-primary !default;
-$o-docs__secondary--text-color:           $s-color__brand-primary !default;
+//$o-docs__secondary--bg-color:             $f-color__brand-primary--ultra-light !default;
+$o-docs__secondary--bg-color:             mix(#fff, $f-color__brand-primary--ultra-light, 70%) !default;
+$o-docs__secondary--border-color:         $f-color__brand-primary !default;
+$o-docs__secondary--text-color:           $f-color__brand-primary !default;
 
 // Object as a mixin
 // --------------------------------------------------
@@ -68,10 +68,3 @@ $o-docs__secondary--text-color:           $s-color__brand-primary !default;
   content: attr(data-debug__text);
   color: $o-docs__font-color;
 }
-
-// Docs
-// --------------------------------------------------
-@import "block-docs";
-@import "box-docs";
-@import "crop-docs";
-@import "flag-docs";

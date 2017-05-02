@@ -1,13 +1,13 @@
 
 .c-leading-header {
-  margin-bottom: $s-space--large;
-  padding-top: $s-space--small;
-  padding-bottom: $s-space--small;
-  background-color: $s-color__brand-primary--dark;
-  color: $s-color__brand-primary--ultra-light;
+  margin-bottom: $f-space--large;
+  padding-top: $f-space--small;
+  padding-bottom: $f-space--small;
+  background-color: $f-color__brand-primary--dark;
+  color: $f-color__brand-primary--ultra-light;
 
   @include t-mq($from: "sm") {
-    padding-top: $s-space;
+    padding-top: $f-space;
   }
 }
 
@@ -29,10 +29,10 @@
 
 .c-leading-header__details {
   text-align: right;
-  font-size: $s-font-size--s;
+  font-size: $f-font-size--s;
   margin-bottom: $g-reset__spacing--vertical;
 }
 
 .c-leading-header__icon {
-  fill: $s-color__brand-primary--ultra-light;
+  fill: $f-color__brand-primary--ultra-light;
 }

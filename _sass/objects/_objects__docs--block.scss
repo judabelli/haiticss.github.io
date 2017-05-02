@@ -1,8 +1,8 @@
 
 
-.o-box--debug {
+.o-block--debug {
   position: relative;
-  margin-top: $s-space;
+  margin-top: $f-space;
 
   &::before {
     display: block;
@@ -23,7 +23,9 @@
     @include o-docs__main--txt();
   }
 
-  .o-box__content {
+  .o-block__header,
+  .o-block__body,
+  .o-block__footer {
     position: relative;
     @include o-docs__secondary--outline();
     @include o-docs__secondary--bg();
@@ -35,6 +37,12 @@
       @include o-docs__main--txt();
     }
 
+    &:empty {
+      min-height: 6rem;
+    }
+  }
+
+  .o-block__body {
     &:empty {
       min-height: 15rem;
     }

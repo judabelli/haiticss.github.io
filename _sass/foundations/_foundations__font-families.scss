@@ -1,0 +1,37 @@
+
+/* -------------------------------------------------------------------------
+ * FONTS
+ *
+ * Font families & fallback
+ *
+ */
+
+
+// Fallback families
+
+$f-font-family__sans-fallback:    sans-serif !default;
+$f-font-family__serif-fallback:   serif !default;
+$f-font-family__mono-fallback:    monospace !default;
+
+
+// Custom font imports
+
+@import "foundations__font-families--roboto";
+@import "foundations__font-families--slabo-27px";
+@import "foundations__font-families--inconsolata";
+
+
+// Main font families
+
+$f-font-family__primary:          $f-font-family__roboto, $f-font-family__sans-fallback !default;
+$f-font-family__secondary:        $f-font-family__slabo-27px, $f-font-family__serif-fallback !default;
+$f-font-family__accent:           $f-font-family__inconsolata, $f-font-family__mono-fallback !default;
+
+
+// FONT FAMILIES MAP
+
+$f-font-families: (
+        "primary":    $f-font-family__primary,
+        "secondary":  $f-font-family__secondary,
+        "accent":     $f-font-family__accent,
+) !default;

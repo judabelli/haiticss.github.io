@@ -1,0 +1,37 @@
+
+/* -------------------------------------------------------------------------
+ * Color Schemes > LIGHT
+ *
+ */
+
+
+// Scheme variables
+// --------------------------------------------------
+
+$cs-light__bg-color:          $f-color__neutral-white !default;
+$cs-light__color:             $f-color__brand-primary--dark !default;
+$cs-light__border-color:      $f-color__brand-primary--light !default;
+$cs-light__link-color:        $f-color__brand-primary--semi-dark !default;
+$cs-light__heading-color:     $f-color__brand-primary !default;
+
+// Scheme output
+// --------------------------------------------------
+
+.cs-light {
+  background-color: $cs-light__bg-color;
+  color: $cs-light__color;
+  border-color: $cs-light__border-color;
+
+  a {
+    color: $cs-light__link-color;
+  }
+
+  hr {
+    background-color: $cs-light__border-color;
+  }
+
+  .m-heading {
+    color: $cs-light__heading-color;
+  }
+
+}

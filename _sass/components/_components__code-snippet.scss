@@ -1,0 +1,19 @@
+
+$c-code-snippet__font-family:       $f-font-family__accent;
+$c-code-snippet__padding:           $f-space--small;
+
+.c-code-snippet {
+  display: block;
+  border-width: 1px;
+  border-style: solid;
+  padding: $f-space--small;
+
+  .highlight {
+    margin: 0;
+    font-family: $f-font-family__accent;
+  }
+
+  pre {
+    margin-bottom: 0;
+  }
+}

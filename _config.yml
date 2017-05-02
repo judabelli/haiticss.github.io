@@ -19,3 +19,5 @@ collections:
   docs-objects:
     output: true
     permalink: /docs/objects/:name
+  haiticss:
+    output: false

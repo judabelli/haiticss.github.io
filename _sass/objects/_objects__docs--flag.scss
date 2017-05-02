@@ -2,7 +2,7 @@
 
 .o-flag--debug {
   //position: relative;
-  //margin-top: $s-space;
+  //margin-top: $f-space;
   @include o-docs__main--outline();
   @include o-docs__main--bg();
 

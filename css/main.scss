@@ -34,40 +34,41 @@
  * foundations ............ Design foundations vars
    ========================================================================== */
 
-@import "{{site.haiticss-path}}01-settings/settings__01-core";
-@import "01-settings/settings__02-config";
-@import "{{site.haiticss-path}}01-settings/settings__02-config";
-@import "{{site.haiticss-path}}01-settings/settings__03-core-functions";
-@import "01-settings/settings__04-foundations";
-@import "{{site.haiticss-path}}01-settings/settings__04-foundations";
+@import "{{site.haiticss-path}}src/settings/settings__core";
+@import "settings/settings__config";
+@import "{{site.haiticss-path}}src/settings/settings__config";
+@import "{{site.haiticss-path}}src/settings/settings__core-functions";
+@import "foundations/foundations";
+@import "{{site.haiticss-path}}src/foundations/foundations";
+@import "{{site.haiticss-path}}src/tools/tools";
 
 /* ==========================================================================
  * CONTENT
    ========================================================================== */
 
-@import "{{site.haiticss-path}}02-tools/tools";
-@import "{{site.haiticss-path}}03-generic/generic";
-@import "{{site.haiticss-path}}04-elements/elements";
 
-@import "{{site.haiticss-path}}05-objects/objects";
-@import "10-objects/docs";
+@import "{{site.haiticss-path}}src/generic/generic";
+@import "{{site.haiticss-path}}src/elements/elements";
+//@import "{{site.haiticss-path}}material/material";
+@import "material/material";
 
-@import "20-material/material";
+@import "{{site.haiticss-path}}src/objects/objects";
+@import "objects/objects";
 
-@import "21-components/footer";
-@import "21-components/header";
-@import "21-components/leading-header";
+@import "color-schemes/color-schemes";
 
-@import "30-templates/home";
+@import "components/components";
 
-@import "{{site.haiticss-path}}99-utilities/utilities";
+@import "templates/templates";
+
+@import "{{site.haiticss-path}}src/utilities/utilities";
 
 html {
-  background-color: $s-color__brand-primary--ultra-light;
+  background-color: $f-color__brand-primary--ultra-light;
 }
 
 a {
-  color: $s-color__brand-primary--dark;
+  color: $f-color__brand-primary--dark;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -75,7 +76,13 @@ a {
 }
 
 p + p {
-  margin-top: $s-space--small * -1;
+  margin-top: $f-space--small * -1;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: $e-document__body--color;
 }
 
 .o-flag__img {
@@ -84,13 +91,13 @@ p + p {
   }
 }
 .u-pv--large {
-  padding-bottom: $s-space--large !important;
-  padding-top: $s-space--large !important;
+  padding-bottom: $f-space--large !important;
+  padding-top: $f-space--large !important;
 }
 
 .u-mb--medium {
-  margin-bottom: $s-space--medium !important;
+  margin-bottom: $f-space--medium !important;
 }
 .u-mb--large {
-  margin-bottom: $s-space--large !important;
+  margin-bottom: $f-space--large !important;
 }

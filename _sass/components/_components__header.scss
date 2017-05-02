@@ -1,0 +1,33 @@
+
+.c-header {
+  margin-bottom: $f-space--large;
+  padding-top: $f-space--small;
+  padding-bottom: $f-space--small;
+  background-color: $f-color__brand-primary--dark;
+  color: $f-color__brand-primary--ultra-light;
+
+  @include t-mq($from: "sm") {
+    padding-top: $f-space;
+  }
+}
+
+.c-header__brand {
+  margin-bottom: 0;
+  text-decoration: none;
+  color: $f-color__brand-primary--ultra-light;
+}
+
+.c-header__details {
+  text-align: right;
+  font-size: $f-font-size--s;
+}
+
+.c-header__slogan {
+  @include t-mq($until: "xs") {
+    display: none;
+  }
+}
+
+.c-header__icon {
+  fill: $f-color__brand-primary--ultra-light;
+}

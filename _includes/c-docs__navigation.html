@@ -1,0 +1,11 @@
+<nav class="o-box cs-light c-side-nav t-docs__navigation">
+    <div class="o-box__content">
+        <h4 class="m-heading m-heading--small">Documentation</h4>
+        <hr>
+        <a class="c-side-nav__item" href="/">objects</a>
+        {% for object in site.docs-objects %}
+        <a class="c-side-nav__item c-side-nav__item--level-2" href="{{object.url}}">{{object.name}}</a>
+        {% endfor %}
+    </div>
+</nav>
+

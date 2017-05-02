@@ -1,11 +1,11 @@
 
 // https://fonts.google.com/specimen/Inconsolata
 
-$s-font-family__inconsolata:               'Inconsolata' !default;
+$f-font-family__inconsolata:               'Inconsolata' !default;
 
 /* inconsolata-regular - latin */
 @font-face {
-  font-family: $s-font-family__inconsolata;
+  font-family: $f-font-family__inconsolata;
   font-style: normal;
   font-weight: 400;
   src: url('#{$s-config__path--fonts}/inconsolata/inconsolata-v15-latin-regular.eot'); /* IE9 Compat Modes */
@@ -19,7 +19,7 @@ $s-font-family__inconsolata:               'Inconsolata' !default;
 
 /* inconsolata-700 - latin */
 @font-face {
-  font-family: $s-font-family__inconsolata;
+  font-family: $f-font-family__inconsolata;
   font-style: normal;
   font-weight: 700;
   src: url('#{$s-config__path--fonts}/inconsolata/inconsolata-v15-latin-700.eot'); /* IE9 Compat Modes */

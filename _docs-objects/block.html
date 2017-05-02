@@ -2,6 +2,7 @@
 layout: docs
 template: t-docs
 title: Objects > BLOCK
+name: block
 ---
 
 <h1 class="m-heading">Objects > BLOCK</h1>
@@ -10,60 +11,89 @@ title: Objects > BLOCK
 <p>Stacked content object. A simple abstraction to cover a very commonly occurring design pattern.</p>
 <p>Header, body and footer elements are optional.</p>
 
-<div class="o-block o-block--debug u-mb--large" data-debug__text=".o-block">
+<div class="o-block o-block--debug u-mb--medium" data-debug__text=".o-block">
     <div class="o-block__header" data-debug__text=".o-block__header"></div>
     <div class="o-block__body" data-debug__text=".o-block__body"></div>
     <div class="o-block__footer" data-debug__text=".o-block__footer"></div>
 </div>
 
-<h2 class="m-heading--small">Space variants</h2>
-
-<hr class="u-mb--large">
-
-<div class="o-block o-block--space-none o-block--debug u-mb--large" data-debug__text=".o-block.o-block--space-none">
-    <div class="o-block__header" data-debug__text=".o-block__header"></div>
-    <div class="o-block__body" data-debug__text=".o-block__body"></div>
-    <div class="o-block__footer" data-debug__text=".o-block__footer"></div>
+<div class="cs-light c-code-snippet u-mb--large">
+    {% highlight html %}
+<div class="o-block">
+    <div class="o-block__header"></div>
+    <div class="o-block__body"></div>
+    <div class="o-block__footer"></div>
+</div>{% endhighlight %}
 </div>
 
-<div class="o-block o-block--space-tiny o-block--debug u-mb--large" data-debug__text=".o-block.o-block--space-tiny">
-    <div class="o-block__header" data-debug__text=".o-block__header"></div>
-    <div class="o-block__body" data-debug__text=".o-block__body"></div>
-    <div class="o-block__footer" data-debug__text=".o-block__footer"></div>
+<h2 class="m-heading--small">Space modifiers</h2>
+<hr>
+<p>The block space modifiers defines the vertical distance between header, body and footer.</p>
+
+<select name="o-block--spaces" id="o-block__select--spaces" class="js-select-replacer" data-select-replacer__target="#o-block__playground--spaces">
+    <option value="o-block--space-none" selected>space-none</option>
+    <option value="o-block--space-tiny">space-tiny</option>
+    <option value="o-block--space-small">space-small</option>
+    <option value="o-block--space-medium">space-medium</option>
+    <option value="o-block--space-large">space-large</option>
+    <option value="o-block--space-huge">space-huge</option>
+</select>
+
+<div id="o-block__playground--spaces">
+
+    <div class="o-block o-block--space-none o-block--debug u-mb--medium" data-debug__text=".o-block.o-block--space-none">
+        <div class="o-block__header" data-debug__text=".o-block__header"></div>
+        <div class="o-block__body" data-debug__text=".o-block__body"></div>
+        <div class="o-block__footer" data-debug__text=".o-block__footer"></div>
+    </div>
+
+    <div class="cs-light c-code-snippet u-mb--large">
+        {% highlight html %}
+<div class="o-block o-block--space-none">
+    <div class="o-block__header"></div>
+    <div class="o-block__body"></div>
+    <div class="o-block__footer"></div>
+</div>{% endhighlight %}
+    </div>
+
 </div>
 
-<div class="o-block o-block--space-small o-block--debug u-mb--large" data-debug__text=".o-block.o-block--space-small">
-    <div class="o-block__header" data-debug__text=".o-block__header"></div>
-    <div class="o-block__body" data-debug__text=".o-block__body"></div>
-    <div class="o-block__footer" data-debug__text=".o-block__footer"></div>
+<h2 class="m-heading--small">Alignment modifiers</h2>
+<hr>
+<p>The block alignment modifiers defines the horizontal text alignment.</p>
+
+<select name="o-block--alignments" id="o-block__select--alignments" class="js-select-replacer" data-select-replacer__target="#o-block__playground--alignments">
+    <option value="o-block--left" selected>left</option>
+    <option value="o-block--center">center</option>
+    <option value="o-block--right">right</option>
+</select>
+
+<div id="o-block__playground--alignments">
+
+    <div class="o-block o-block--left o-block--debug u-mb--large" data-debug__text=".o-block.o-block--left">
+        <div class="o-block__header" data-debug__text=".o-block__header">
+            <p class="m-heading--small">Header lorem</p>
+        </div>
+        <div class="o-block__body" data-debug__text=".o-block__body">
+            <p>Body ipsum dolor sit amet, consectetur adipisicing elit. Animi, aut, dicta dignissimos esse inventore ipsa laudantium mollitia numquam odit, saepe similique voluptates? Esse fugiat harum incidunt porro quis, repudiandae voluptates.</p>
+        </div>
+        <div class="o-block__footer" data-debug__text=".o-block__footer">
+            <p>Footer dolor</p>
+        </div>
+    </div>
+
+    <div class="cs-light c-code-snippet u-mb--large">
+{% highlight html %}
+<div class="o-block o-block--left">
+    <div class="o-block__header"></div>
+    <div class="o-block__body"></div>
+    <div class="o-block__footer"></div>
+</div>{% endhighlight %}
+    </div>
+
 </div>
 
-<div class="o-block o-block--space-medium o-block--debug u-mb--large" data-debug__text=".o-block.o-block--space-medium">
-    <div class="o-block__header" data-debug__text=".o-block__header"></div>
-    <div class="o-block__body" data-debug__text=".o-block__body"></div>
-    <div class="o-block__footer" data-debug__text=".o-block__footer"></div>
-</div>
-
-<div class="o-block o-block--space-large o-block--debug u-mb--large" data-debug__text=".o-block.o-block--space-large">
-    <div class="o-block__header" data-debug__text=".o-block__header"></div>
-    <div class="o-block__body" data-debug__text=".o-block__body"></div>
-    <div class="o-block__footer" data-debug__text=".o-block__footer"></div>
-</div>
-
-<div class="o-block o-block--space-huge o-block--debug u-mb--large" data-debug__text=".o-block.o-block--space-huge">
-    <div class="o-block__header" data-debug__text=".o-block__header"></div>
-    <div class="o-block__body" data-debug__text=".o-block__body"></div>
-    <div class="o-block__footer" data-debug__text=".o-block__footer"></div>
-</div>
-
-<h2 class="m-heading--small">Alignment variants</h2>
-
-<hr class="u-mb--large">
-
-<p>TODO: document</p>
 
 <h2 class="m-heading--small">Stretch modifier</h2>
-
-<hr class="u-mb--large">
-
-<p>TODO: document</p>
+<hr>
+<p>The stretch modifier uses flex properties to grow the body on the proper context.</p>

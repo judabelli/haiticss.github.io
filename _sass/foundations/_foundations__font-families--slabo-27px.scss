@@ -1,10 +1,10 @@
 
 // https://fonts.google.com/specimen/Slabo+27px
 
-$s-font-family__slabo-27px:               'Slabo 27px' !default;
+$f-font-family__slabo-27px:               'Slabo 27px' !default;
 
 @font-face {
-  font-family: $s-font-family__slabo-27px;
+  font-family: $f-font-family__slabo-27px;
   font-style: normal;
   font-weight: 400;
   src: url('#{$s-config__path--fonts}/slabo-27px/slabo-27px-v3-latin-regular.eot'); /* IE9 Compat Modes */
