@@ -1,0 +1,25 @@
+
+
+.o-wrapper--debug {
+  position: relative;
+  min-height: 50vh;
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @include o-docs__main--outline();
+    @include o-docs__main--bg();
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    @include o-docs__main--txt();
+  }
+}

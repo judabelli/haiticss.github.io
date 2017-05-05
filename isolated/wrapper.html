@@ -1,0 +1,50 @@
+---
+layout: isolated
+template: t-isolated
+title: Objects > WRAPPER
+name: wrapper
+selector: .o-wrapper
+---
+
+<div class="o-wrapper u-mb--medium">
+    <select name="o-wrapper--from" id="o-wrapper__select--from" class="js-select-replacer" data-select-replacer__target="#o-wrapper__playground">
+        <option value="o-wrapper--from" selected>Not set</option>
+        <option value="o-wrapper--from@xs">From XS</option>
+        <option value="o-wrapper--from@sm">From SM</option>
+        <option value="o-wrapper--from@sml">From SML</option>
+        <option value="o-wrapper--from@md">From MD</option>
+        <option value="o-wrapper--from@lg">From LG</option>
+        <option value="o-wrapper--from@xl">From XL</option>
+        <option value="o-wrapper--from@xxl">From XXL</option>
+    </select>
+
+    <select name="o-wrapper--to" id="o-wrapper__select--to" class="js-select-replacer" data-select-replacer__target="#o-wrapper__playground">
+        <option value="o-wrapper--to">Not set</option>
+        <option value="o-wrapper--to@xs">To XS</option>
+        <option value="o-wrapper--to@sm">To SM</option>
+        <option value="o-wrapper--to@sml">To SML</option>
+        <option value="o-wrapper--to@md">To MD</option>
+        <option value="o-wrapper--to@lg">To LG</option>
+        <option value="o-wrapper--to@xl">To XL</option>
+        <option value="o-wrapper--to@xxl">To XXL</option>
+    </select>
+</div>
+
+
+
+<div id="o-wrapper__playground">
+
+    <div class="o-wrapper o-wrapper--space-none o-wrapper--debug o-wrapper--from o-wrapper--to u-mb--medium" data-debug__text=".o-wrapper.o-wrapper--from.o-wrapper--to">
+    </div>
+
+    <div class="o-wrapper">
+        <div class="cs-light c-code-snippet u-mb--large">
+            {% highlight html %}
+<div class="o-wrapper o-wrapper--from o-wrapper--to">
+</div>{% endhighlight %}
+        </div>
+    </div>
+
+
+
+</div>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    {% include head/title.html %}
+    {% include head/stylesheet.html %}
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    {% include head/meta.html %}
+    {% include scripts/header.html %}
+</head>
+
+<body class="{{ page.template }}">
+
+{{ content }}
+
+{% include scripts/analytics.html %}
+</body>
+</html>
