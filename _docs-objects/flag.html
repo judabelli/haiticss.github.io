@@ -21,7 +21,7 @@ name: flag
 </div>
 
 <div class="cs-light c-code-snippet u-mb--large">
-    {% highlight html %}
+{% highlight html %}
 <div class="o-flag">
     <div class="o-flag__img"></div>
     <div class="o-flag__body"></div>
@@ -31,18 +31,18 @@ name: flag
 
 <h2 class="m-heading--small">Space modifiers</h2>
 <hr>
-<p>The flag space modifiers defines the horizontal distance between img and body.</p>
+<p>The flag space modifiers defines the horizontal distance between img and body. The object space by default is medium.</p>
 
-<select name="o-flag--spaces" id="o-flag__select--spaces" class="js-select-replacer" data-select-replacer__target="#o-flag__playground--spaces">
-    <option value="o-flag--space-none" selected>space-none</option>
+<select name="o-flag--spaces" id="o-flag__select--spaces" class="js-select-replacer u-mb--medium" data-select-replacer__target="#o-flag__playground--spaces">
+    <option value="o-flag--space-none">space-none</option>
     <option value="o-flag--space-tiny">space-tiny</option>
     <option value="o-flag--space-small">space-small</option>
-    <option value="o-flag--space-medium">space-medium</option>
+    <option value="o-flag--space-medium" selected>space-medium</option>
 </select>
 
 <div id="o-flag__playground--spaces">
 
-    <div class="o-flag o-flag--space-none o-flag--debug u-mb--medium" data-debug__text=".o-flag.o-flag--space-none">
+    <div class="o-flag o-flag--space-medium o-flag--debug u-mb--medium" data-debug__text=".o-flag.o-flag--space-medium">
         <div class="o-flag__img" data-debug__text=".o-flag__img">
             <img src="https://dummyimage.com/256x256/fff7ed/c25e00.jpg">
         </div>
@@ -52,8 +52,8 @@ name: flag
     </div>
 
     <div class="cs-light c-code-snippet u-mb--large">
-        {% highlight html %}
-<div class="o-flag o-flag--space-none">
+{% highlight html %}
+<div class="o-flag o-flag--space-medium">
     <div class="o-flag__img"></div>
     <div class="o-flag__body"></div>
 </div>{% endhighlight %}
@@ -64,17 +64,17 @@ name: flag
 
 <h2 class="m-heading--small">Alignment modifiers</h2>
 <hr>
-<p>The flag alignment modifiers defines the vertical alignment for both img and body.</p>
+<p>The flag alignment modifiers defines the vertical alignment for both img and body. The object alignment by default is middle.</p>
 
-<select name="o-flag--alignments" id="o-flag__select--alignments" class="js-select-replacer" data-select-replacer__target="#o-flag__playground--alignments">
-    <option value="o-flag--top" selected>top</option>
-    <option value="o-flag--middle">middle</option>
+<select name="o-flag--alignments" id="o-flag__select--alignments" class="js-select-replacer u-mb--medium" data-select-replacer__target="#o-flag__playground--alignments">
+    <option value="o-flag--top">top</option>
+    <option value="o-flag--middle" selected>middle</option>
     <option value="o-flag--bottom">bottom</option>
 </select>
 
 <div id="o-flag__playground--alignments">
 
-    <div class="o-flag o-flag--top o-flag--debug u-mb--medium" data-debug__text=".o-flag.o-flag--top">
+    <div class="o-flag o-flag--middle o-flag--debug u-mb--medium" data-debug__text=".o-flag.o-flag--middle">
         <div class="o-flag__img" data-debug__text=".o-flag__img">
             <img src="https://dummyimage.com/256x256/fff7ed/c25e00.jpg">
         </div>
@@ -84,8 +84,8 @@ name: flag
     </div>
 
     <div class="cs-light c-code-snippet u-mb--large">
-        {% highlight html %}
-<div class="o-flag o-flag--top">
+{% highlight html %}
+<div class="o-flag o-flag--middle">
     <div class="o-flag__img"></div>
     <div class="o-flag__body"></div>
 </div>{% endhighlight %}
@@ -109,7 +109,7 @@ name: flag
 </div>
 
 <div class="cs-light c-code-snippet u-mb--large">
-    {% highlight html %}
+{% highlight html %}
 <div class="o-flag o-flag--reverse">
     <div class="o-flag__img"></div>
     <div class="o-flag__body"></div>

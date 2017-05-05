@@ -41,6 +41,12 @@ $o-docs__secondary--text-color:           $f-color__brand-primary !default;
   outline-color: $o-docs__main--border-color;
 }
 
+@mixin o-docs__main--border() {
+  border-width: $o-docs__border--width;
+  border-style: $o-docs__border--style;
+  border-color: $o-docs__main--border-color;
+}
+
 @mixin o-docs__main--bg() {
   background-color: $o-docs__main--bg-color;
 }
@@ -56,6 +62,12 @@ $o-docs__secondary--text-color:           $f-color__brand-primary !default;
   outline-width: $o-docs__border--width;
   outline-style: $o-docs__border--style;
   outline-color: $o-docs__secondary--border-color;
+}
+
+@mixin o-docs__secondary--border() {
+  border-width: $o-docs__border--width;
+  border-style: $o-docs__border--style;
+  border-color: $o-docs__secondary--border-color;
 }
 
 @mixin o-docs__secondary--bg() {

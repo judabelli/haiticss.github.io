@@ -1,0 +1,35 @@
+//.o-ratio-wrapper {
+//  position: relative;
+//
+//  &::after {
+//    position: absolute;
+//    top: -1.5rem;
+//    right: 0;
+//    @include o-docs__main--txt();
+//  }
+//}
+
+
+.o-ratio--debug {
+  position: relative;
+  margin-top: $f-space;
+
+  &::before {
+    @include o-docs__main--outline();
+    @include o-docs__main--bg();
+  }
+
+  &::after {
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+    @include o-docs__main--txt();
+  }
+/*
+  &::after {
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+    @include o-docs__main--txt();
+  }*/
+}

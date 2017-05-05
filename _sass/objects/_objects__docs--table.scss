@@ -1,0 +1,34 @@
+
+.o-table--debug {
+  position: relative;
+  margin-top: $f-space;
+  text-align: center;
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+    @include o-docs__main--txt();
+  }
+
+  tbody {
+    @include o-docs__main--border();
+    border-style: solid;
+  }
+
+  th,
+  td {
+    position: relative;
+    @include o-docs__secondary--border();
+  }
+}

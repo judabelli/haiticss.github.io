@@ -18,7 +18,7 @@ name: block
 </div>
 
 <div class="cs-light c-code-snippet u-mb--large">
-    {% highlight html %}
+{% highlight html %}
 <div class="o-block">
     <div class="o-block__header"></div>
     <div class="o-block__body"></div>
@@ -28,28 +28,28 @@ name: block
 
 <h2 class="m-heading--small">Space modifiers</h2>
 <hr>
-<p>The block space modifiers defines the vertical distance between header, body and footer.</p>
+<p>The block space modifiers defines the vertical distance between header, body and footer. The object space by default is medium.</p>
 
 <select name="o-block--spaces" id="o-block__select--spaces" class="js-select-replacer" data-select-replacer__target="#o-block__playground--spaces">
-    <option value="o-block--space-none" selected>space-none</option>
+    <option value="o-block--space-none">space-none</option>
     <option value="o-block--space-tiny">space-tiny</option>
     <option value="o-block--space-small">space-small</option>
-    <option value="o-block--space-medium">space-medium</option>
+    <option value="o-block--space-medium" selected>space-medium</option>
     <option value="o-block--space-large">space-large</option>
     <option value="o-block--space-huge">space-huge</option>
 </select>
 
 <div id="o-block__playground--spaces">
 
-    <div class="o-block o-block--space-none o-block--debug u-mb--medium" data-debug__text=".o-block.o-block--space-none">
+    <div class="o-block o-block--space-medium o-block--debug u-mb--medium" data-debug__text=".o-block.o-block--space-medium">
         <div class="o-block__header" data-debug__text=".o-block__header"></div>
         <div class="o-block__body" data-debug__text=".o-block__body"></div>
         <div class="o-block__footer" data-debug__text=".o-block__footer"></div>
     </div>
 
     <div class="cs-light c-code-snippet u-mb--large">
-        {% highlight html %}
-<div class="o-block o-block--space-none">
+{% highlight html %}
+<div class="o-block o-block--space-medium">
     <div class="o-block__header"></div>
     <div class="o-block__body"></div>
     <div class="o-block__footer"></div>
@@ -60,17 +60,17 @@ name: block
 
 <h2 class="m-heading--small">Alignment modifiers</h2>
 <hr>
-<p>The block alignment modifiers defines the horizontal text alignment.</p>
+<p>The block alignment modifiers defines the horizontal text alignment. The object alignment by default is center.</p>
 
 <select name="o-block--alignments" id="o-block__select--alignments" class="js-select-replacer" data-select-replacer__target="#o-block__playground--alignments">
-    <option value="o-block--left" selected>left</option>
-    <option value="o-block--center">center</option>
+    <option value="o-block--left">left</option>
+    <option value="o-block--center" selected>center</option>
     <option value="o-block--right">right</option>
 </select>
 
 <div id="o-block__playground--alignments">
 
-    <div class="o-block o-block--left o-block--debug u-mb--large" data-debug__text=".o-block.o-block--left">
+    <div class="o-block o-block--center o-block--debug u-mb--large" data-debug__text=".o-block.o-block--center">
         <div class="o-block__header" data-debug__text=".o-block__header">
             <p class="m-heading--small">Header lorem</p>
         </div>
@@ -84,7 +84,7 @@ name: block
 
     <div class="cs-light c-code-snippet u-mb--large">
 {% highlight html %}
-<div class="o-block o-block--left">
+<div class="o-block o-block--center">
     <div class="o-block__header"></div>
     <div class="o-block__body"></div>
     <div class="o-block__footer"></div>

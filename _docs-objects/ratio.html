@@ -1,0 +1,48 @@
+---
+layout: docs
+template: t-docs
+title: Objects > RATIO
+name: ratio
+---
+
+<h1 class="m-heading">Objects > RATIO</h1>
+<hr>
+
+<p>Create ratio-bound content blocks, to keep media (e.g. images, videos) in their correct aspect ratios.</p>
+
+
+<div class="o-ratio o-ratio--debug u-mb--large" data-debug__text=".o-ratio">
+    <img class="o-ratio__content" src="https://dummyimage.com/1024x1024/fff7ed/c25e00.jpg">
+</div>
+
+
+
+
+<h2 class="m-heading--small">Ratio modifiers</h2>
+<hr>
+<p>The objects modifiers defines the different ratios. The object ratio by default is 1:1.</p>
+
+
+<select name="o-ratio" id="o-ratio__select--spaces" class="js-select-replacer" data-select-replacer__target="#o-ratio__playground--spaces">
+    <option value="o-ratio--1:1" selected>1:1</option>
+    <option value="o-ratio--3:4">3:4</option>
+    <option value="o-ratio--3:2">3:2</option>
+    <option value="o-ratio--16:9">16:9</option>
+    <option value="o-ratio--2:1">2:1</option>
+    <option value="o-ratio--golden">golden</option>
+</select>
+
+<div id="o-ratio__playground--spaces">
+
+    <div class="o-ratio o-ratio--debug o-ratio--1:1 u-mb--medium" data-debug__text=".o-ratio.o-ratio--1:1">
+        <img class="o-ratio__content" src="https://dummyimage.com/1024x1024/fff7ed/c25e00.jpg">
+    </div>
+
+    <div class="cs-light c-code-snippet u-mb--large">
+{% highlight html %}
+<div class="o-ratio o-ratio--1:1">
+    <img class="o-ratio__content" src="https://dummyimage.com/1024x1024/fff7ed/c25e00.jpg">
+</div>{% endhighlight %}
+    </div>
+
+</div>

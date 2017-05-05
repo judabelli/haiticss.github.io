@@ -4,9 +4,6 @@ template: t-docs
 title: Objects > BOX
 name: box
 selector: .o-box
-modifier-spaces:
-    - one
-    - two
 ---
 
 <h1 class="m-heading">Objects > BOX</h1>
@@ -27,27 +24,27 @@ modifier-spaces:
 
 <h2 class="m-heading--small">Space modifiers</h2>
 <hr>
-<p>The box space modifiers defines the distance between box limits and content.</p>
+<p>The box space modifiers defines the distance between box limits and content. The object space by default is medium.</p>
 
 
 <select name="o-box--spaces" id="o-box__select--spaces" class="js-select-replacer" data-select-replacer__target="#o-box__playground--spaces">
     <option value="o-box--space-none" selected>space-none</option>
     <option value="o-box--space-tiny">space-tiny</option>
     <option value="o-box--space-small">space-small</option>
-    <option value="o-box--space-medium">space-medium</option>
+    <option value="o-box--space-medium" selected>space-medium</option>
     <option value="o-box--space-large">space-large</option>
     <option value="o-box--space-huge">space-huge</option>
 </select>
 
 <div id="o-box__playground--spaces">
 
-    <div class="o-box o-box--space-none o-box--debug u-mb--medium" data-debug__text=".o-box.o-box--space-none">
+    <div class="o-box o-box--space-medium o-box--debug u-mb--medium" data-debug__text=".o-box.o-box--space-medium">
         <div class="o-box__content" data-debug__text=".o-box__content"></div>
     </div>
 
     <div class="cs-light c-code-snippet u-mb--large">
 {% highlight html %}
-<div class="o-box o-box--space-none">
+<div class="o-box o-box--space-medium">
     <div class="o-box__content"></div>
 </div>{% endhighlight %}
     </div>
