@@ -16,7 +16,12 @@ google_analytics: UA-97633338-1
 
 # Collections
 collections:
+  docs-foundations:
+    label: foundations
+    output: true
+    permalink: /docs/foundations/:name
   docs-objects:
+    label: objects
     output: true
     permalink: /docs/objects/:name
   haiticss:
