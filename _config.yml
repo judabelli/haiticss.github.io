@@ -9,7 +9,7 @@ url: https://haiticss.io
 enforce_ssl: haiticss.io
 
 # HaitiCSS core path
-haiticss-path: ../_haiticss/
+haiticss-path: ../_includes/_haiticss/
 
 # Google services
 google_analytics: UA-97633338-1
