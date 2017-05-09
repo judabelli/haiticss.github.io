@@ -24,5 +24,9 @@ collections:
     label: objects
     output: true
     permalink: /docs/objects/:name
+  docs-tools:
+    label: tools
+    output: true
+    permalink: /docs/tools/:name
   haiticss:
     output: false
