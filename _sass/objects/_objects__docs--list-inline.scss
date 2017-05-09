@@ -1,0 +1,43 @@
+
+
+.o-list-inline--debug {
+  position: relative;
+  margin-top: $f-space;
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @include o-docs__main--outline();
+    @include o-docs__main--bg();
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+    @include o-docs__main--txt();
+  }
+
+  .o-list-inline__content {
+    position: relative;
+    @include o-docs__secondary--outline();
+    @include o-docs__secondary--bg();
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: .5rem;
+      @include o-docs__main--txt();
+    }
+
+    &:empty {
+      min-height: 15rem;
+    }
+  }
+
+}

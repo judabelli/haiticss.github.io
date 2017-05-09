@@ -1,0 +1,214 @@
+---
+layout: docs
+template: t-docs
+title: Objects > LAYOUT
+name: layout
+---
+
+<h1 class="m-heading">Objects > LAYOUT</h1>
+<hr>
+
+<p>The layout object helps us to define column-based layouts in a very simple way. It's probably the most used and flexible object and it becomes very powerful combined with utilities and breakpoint modifiers.</p>
+
+
+<h2 class="m-heading--small">Usage</h2>
+<hr>
+
+<h4 class="m-heading--tiny">Raw flavour (rarely useful)</h4>
+
+<p>The raw flavour is not so useful by itself, so it behaves like stacked full-width element:</p>
+
+<div class="cs-light c-code-snippet u-mb--large">
+    {% highlight html %}
+    <div class="o-layout">
+        <div class="o-layout__item"></div>
+        <div class="o-layout__item"></div>
+    </div>{% endhighlight %}
+</div>
+
+<div class="o-layout o-layout--space-none o-layout--debug u-mb--medium" data-debug__text=".o-layout">
+    <div class="o-layout__item" data-debug__text=".o-layout__item"></div>
+    <div class="o-layout__item" data-debug__text=".o-layout__item"></div>
+</div>
+
+
+<h4 class="m-heading--tiny">Custom layouts</h4>
+
+<p>But combined with utilities it allows us to create complex layouts:</p>
+
+<div class="cs-light c-code-snippet u-mb--large">
+    {% highlight html %}
+    <div class="o-layout">
+        <div class="o-layout__item  u-1/1"></div>
+        <div class="o-layout__item  u-1/2"></div>
+        <div class="o-layout__item  u-1/4"></div>
+        <div class="o-layout__item  u-1/4"></div>
+        <div class="o-layout__item  u-1/3"></div>
+        <div class="o-layout__item  u-2/3"></div>
+        <div class="o-layout__item  u-1/5"></div>
+        <div class="o-layout__item  u-1/5"></div>
+        <div class="o-layout__item  u-3/5"></div>
+    </div>{% endhighlight %}
+</div>
+
+<div class="o-layout o-layout--space-none o-layout--debug u-mb--medium" data-debug__text=".o-layout">
+    <div class="o-layout__item  u-1/1" data-debug__text=".o-layout__item .u-1/1"></div>
+    <div class="o-layout__item  u-1/2" data-debug__text=".o-layout__item .u-1/2"></div>
+    <div class="o-layout__item  u-1/4" data-debug__text=".o-layout__item .u-1/4"></div>
+    <div class="o-layout__item  u-1/4" data-debug__text=".o-layout__item .u-1/4"></div>
+    <div class="o-layout__item  u-1/3" data-debug__text=".o-layout__item .u-1/3"></div>
+    <div class="o-layout__item  u-2/3" data-debug__text=".o-layout__item .u-2/3"></div>
+    <div class="o-layout__item  u-1/5" data-debug__text=".o-layout__item .u-1/5"></div>
+    <div class="o-layout__item  u-1/5" data-debug__text=".o-layout__item .u-1/5"></div>
+    <div class="o-layout__item  u-3/5" data-debug__text=".o-layout__item .u-3/5"></div>
+</div>
+
+<h4 class="m-heading--tiny">Responsive layouts</h4>
+
+<p>You can go a step further and create responsive layouts using the utilities breakpoint modifiers (resize window to see how behaves with different breakpoints)</p>
+
+<div class="cs-light c-code-snippet u-mb--large">
+    {% highlight html %}
+    <div class="o-layout">
+        <div class="o-layout__item u-1/2@sm u-1/4@md"></div>
+        <div class="o-layout__item u-1/2@sm u-1/4@md"></div>
+        <div class="o-layout__item u-1/2@sm u-1/4@md"></div>
+        <div class="o-layout__item u-1/2@sm u-1/4@md"></div>
+    </div>{% endhighlight %}
+</div>
+
+<div class="o-layout o-layout--space-none o-layout--debug u-mb--medium" data-debug__text=".o-layout">
+    <div class="o-layout__item u-1/2@sm u-1/4@md" data-debug__text=".o-layout__item .u-1/2@sm .u-1/4@md"></div>
+    <div class="o-layout__item u-1/2@sm u-1/4@md" data-debug__text=".o-layout__item .u-1/2@sm .u-1/4@md"></div>
+    <div class="o-layout__item u-1/2@sm u-1/4@md" data-debug__text=".o-layout__item .u-1/2@sm .u-1/4@md"></div>
+    <div class="o-layout__item u-1/2@sm u-1/4@md" data-debug__text=".o-layout__item .u-1/2@sm .u-1/4@md"></div>
+</div>
+
+<h2 class="m-heading--small">Space modifiers</h2>
+<hr>
+<p>Sets the separation between the content of each item and the left side of it's container.</p>
+
+
+<select name="o-layout--spaces" id="o-layout__select--spaces" class="js-select-replacer" data-select-replacer__target="#o-layout__playground--spaces">
+    <option value="o-layout--space-none">space-none</option>
+    <option value="o-layout--space-tiny">space-tiny</option>
+    <option value="o-layout--space-small">space-small</option>
+    <option value="o-layout--space-medium" selected>space-medium</option>
+</select>
+
+<div id="o-layout__playground--spaces">
+    <div class="o-layout o-layout--space-medium o-layout--debug u-mb--medium" data-debug__text=".o-layout.o-layout--space-medium">
+        <div class="o-layout__item u-1/2">
+            <p>Body ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </div>
+        <div class="o-layout__item u-1/2">
+            <p>Body ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </div>
+    </div>
+    <div class="cs-light c-code-snippet u-mb--large">
+        {% highlight html %}
+        <div class="o-layout o-layout--space-medium">
+            <div class="o-layout__item u-1/2"></div>
+            <div class="o-layout__item u-1/2"></div>
+        </div>{% endhighlight %}
+    </div>
+</div>
+
+<h2 class="m-heading--small">Vertical alignment modifiers</h2>
+<hr>
+<p>Defines how the items should be aligned between each other within the row.</p>
+
+<select name="o-layout--alignment" id="o-layout__select--alignment" class="js-select-replacer" data-select-replacer__target="#o-layout__playground--alignment">
+    <option value="o-layout--top" selected>top</option>
+    <option value="o-layout--middle">middle</option>
+    <option value="o-layout--bottom">bottom</option>
+</select>
+
+<div id="o-layout__playground--alignment">
+    <div class="o-layout o-layout--space-none o-layout--top o-layout--debug u-mb--medium" data-debug__text=".o-layout.o-layout--top">
+        <div class="o-layout__item u-1/2">
+            <p>Body ipsum dolor sit amet, consectetur adipisicing elit. Body ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="o-layout__item u-1/2">
+            <p>Body ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </div>
+    </div>
+    <div class="cs-light c-code-snippet u-mb--large">
+        {% highlight html %}
+        <div class="o-layout o-layout--top">
+            <div class="o-layout__item u-1/2"></div>
+            <div class="o-layout__item u-1/2"></div>
+        </div>{% endhighlight %}
+    </div>
+</div>
+
+<h2 class="m-heading--small">Horizontal alignment modifiers</h2>
+<hr>
+<p>Defines how the items should be aligned along the row.</p>
+
+<select name="o-layout--h-alignment" id="o-layout__select--h-alignment" class="js-select-replacer" data-select-replacer__target="#o-layout__playground--h-alignment">
+    <option value="o-layout--left" selected>left</option>
+    <option value="o-layout--center">center</option>
+    <option value="o-layout--right">right</option>
+</select>
+
+<div id="o-layout__playground--h-alignment">
+    <div class="o-layout o-layout--space-none o-layout--left o-layout--debug u-mb--medium" data-debug__text=".o-layout.o-layout--left">
+        <div class="o-layout__item u-1/1">
+            <p>Body ipsum dolor sit amet, consectetur adipisicing elit. Body ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="o-layout__item u-1/2">
+            <p>Body ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </div>
+    </div>
+    <div class="cs-light c-code-snippet u-mb--large">
+        {% highlight html %}
+        <div class="o-layout o-layout--left">
+            <div class="o-layout__item u-1/2"></div>
+            <div class="o-layout__item u-1/2"></div>
+        </div>{% endhighlight %}
+    </div>
+</div>
+
+<h2 class="m-heading--small">Reverse modifier</h2>
+<hr>
+<p>Flips the whole layout (the <strong>o-layout--no-reverse</strong> is not required but here with demo purposes)</p>
+
+
+<select name="o-layout--reverse" id="o-layout__select--reverse" class="js-select-replacer" data-select-replacer__target="#o-layout__playground--reverse">
+    <option value="o-layout--no-reverse" selected>no-reverse</option>
+    <option value="o-layout--reverse">reverse</option>
+</select>
+
+
+<div id="o-layout__playground--reverse">
+    <div class="o-layout o-layout--space-none o-layout--no-reverse o-layout--debug u-mb--medium" data-debug__text=".o-layout.o-layout--no-reverse">
+        <div class="o-layout__item  u-1/1" data-debug__text=".o-layout__item .u-1/1"></div>
+        <div class="o-layout__item  u-1/2" data-debug__text=".o-layout__item .u-1/2"></div>
+        <div class="o-layout__item  u-1/4" data-debug__text=".o-layout__item .u-1/4"></div>
+        <div class="o-layout__item  u-1/4" data-debug__text=".o-layout__item .u-1/4"></div>
+        <div class="o-layout__item  u-1/3" data-debug__text=".o-layout__item .u-1/3"></div>
+        <div class="o-layout__item  u-2/3" data-debug__text=".o-layout__item .u-2/3"></div>
+        <div class="o-layout__item  u-1/5" data-debug__text=".o-layout__item .u-1/5"></div>
+        <div class="o-layout__item  u-1/5" data-debug__text=".o-layout__item .u-1/5"></div>
+        <div class="o-layout__item  u-3/5" data-debug__text=".o-layout__item .u-3/5"></div>
+    </div>
+    <div class="cs-light c-code-snippet u-mb--large">
+        {% highlight html %}
+        <div class="o-layout o-layout--no-reverse">
+            <div class="o-layout__item  u-1/1"></div>
+            <div class="o-layout__item  u-1/2"></div>
+            <div class="o-layout__item  u-1/4"></div>
+            <div class="o-layout__item  u-1/4"></div>
+            <div class="o-layout__item  u-1/3"></div>
+            <div class="o-layout__item  u-2/3"></div>
+            <div class="o-layout__item  u-1/5"></div>
+            <div class="o-layout__item  u-1/5"></div>
+            <div class="o-layout__item  u-3/5"></div>
+        </div>{% endhighlight %}
+    </div>
+</div>
+
+
+
+

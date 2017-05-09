@@ -1,0 +1,94 @@
+---
+layout: docs
+template: t-docs
+title: Objects > PACK
+name: pack
+---
+
+<h1 class="m-heading">Objects > PACK</h1>
+<hr>
+
+<p>The pack object simply causes any number of elements pack up horizontally to automatically fill an equal, fluid width of their parent.</p>
+
+<div class="o-pack o-pack--space-none o-pack--debug u-mb--medium" data-debug__text=".o-pack">
+    <div class="o-pack__item" data-debug__text=".o-pack__item"></div>
+    <div class="o-pack__item" data-debug__text=".o-pack__item"></div>
+    <div class="o-pack__item" data-debug__text=".o-pack__item"></div>
+    <div class="o-pack__item" data-debug__text=".o-pack__item"></div>
+</div>
+
+<div class="cs-light c-code-snippet u-mb--large">
+    {% highlight html %}
+    <div class="o-pack">
+        <div class="o-pack__item"></div>
+        <div class="o-pack__item"></div>
+    </div>{% endhighlight %}
+</div>
+
+<h2 class="m-heading--small">Space modifiers</h2>
+<hr>
+<p>Sets the space around the item.</p>
+
+<select name="o-pack--space" id="o-layout__select--space" class="js-select-replacer" data-select-replacer__target="#o-pack__playground--space">
+    <option value="o-pack--space-none">none</option>
+    <option value="o-pack--space-tiny">tiny</option>
+    <option value="o-pack--space-small">small</option>
+    <option value="o-pack--space-medium" selected>medium</option>
+</select>
+
+
+<div id="o-pack__playground--space">
+    <div class="o-pack o-pack--space-medium o-pack--debug u-mb--medium" data-debug__text=".o-pack.o-pack--space-medium">
+        <div class="o-pack__item" data-debug__text=".o-pack__item"></div>
+        <div class="o-pack__item" data-debug__text=".o-pack__item"></div>
+        <div class="o-pack__item" data-debug__text=".o-pack__item"></div>
+        <div class="o-pack__item" data-debug__text=".o-pack__item"></div>
+    </div>
+    <div class="cs-light c-code-snippet u-mb--large">
+        {% highlight html %}
+        <div class="o-pack o-pack--space-medium">
+            <div class="o-pack__img"></div>
+            <div class="o-pack__body"></div>
+        </div>{% endhighlight %}
+    </div>
+</div>
+
+<h2 class="m-heading--small">Reverse modifier</h2>
+<hr>
+<p>Flips the whole layout</p>
+
+<div class="o-pack o-pack--reverse o-pack--debug u-mb--medium" data-debug__text=".o-pack.o-pack--reverse">
+    <div class="o-pack__item" data-debug__text=".o-pack__item">1</div>
+    <div class="o-pack__item" data-debug__text=".o-pack__item">2</div>
+    <div class="o-pack__item" data-debug__text=".o-pack__item">3</div>
+    <div class="o-pack__item" data-debug__text=".o-pack__item">4</div>
+</div>
+<div class="cs-light c-code-snippet u-mb--large">
+    {% highlight html %}
+    <div class="o-pack o-pack--reverse">
+        <div class="o-pack__item">1</div>
+        <div class="o-pack__item">2</div>
+        <div class="o-pack__item">3</div>
+        <div class="o-pack__item">4</div>
+    </div>{% endhighlight %}
+</div>
+
+
+<h2 class="m-heading--small">Auto-width modifier</h2>
+<hr>
+
+<div class="o-pack o-pack--auto o-pack--debug u-mb--medium" data-debug__text=".o-pack.o-pack--auto">
+    <div class="o-pack__item">Lorem</div>
+    <div class="o-pack__item">Ipsum dolor sit amet consecteur</div>
+    <div class="o-pack__item">Sator arepo tenet opera rotas</div>
+    <div class="o-pack__item">Lorem</div>
+</div>
+<div class="cs-light c-code-snippet u-mb--large">
+    {% highlight html %}
+    <div class="o-pack o-pack--auto">
+        <div class="o-pack__item">1</div>
+        <div class="o-pack__item">2</div>
+        <div class="o-pack__item">3</div>
+        <div class="o-pack__item">4</div>
+    </div>{% endhighlight %}
+</div>

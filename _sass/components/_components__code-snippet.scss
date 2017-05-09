@@ -7,6 +7,7 @@ $c-code-snippet__padding:           $f-space--small;
   border-width: 1px;
   border-style: solid;
   padding: $f-space--small;
+  overflow: scroll;
 
   .highlight {
     margin: 0;
