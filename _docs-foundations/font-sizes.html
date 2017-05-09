@@ -1,0 +1,20 @@
+---
+layout: docs
+template: t-docs
+title: Foundations > FONT-SIZES
+name: font-sizes
+collection: docs-foundations
+---
+
+<h1 class="m-heading">foundations > FONT-SIZES</h1>
+<hr>
+
+<p>Defines the font sizes used in the other layers, using the shirt sizes nomenclature.</p>
+<p>The standard font size is <code>m</code>, which is defined by the variable <code>$s-core__font-size</code>.</p>
+<p>All the values should be expressed in <code>px</code>. If you need a relative unit based values, you can use the core functions in the context.</p>
+<p>A safe checking is included to ensure this unit specification and the numeric values.</p>
+
+<div class="cs-light c-code-snippet u-mb--large">
+{% highlight sass %}
+{% include haiticss/src/foundations/_foundations__font-sizes.scss %}{% endhighlight %}
+</div>

@@ -1,0 +1,19 @@
+---
+layout: docs
+template: t-docs
+title: Foundations > FONT-FAMILIES
+name: font-families
+collection: docs-foundations
+---
+
+<h1 class="m-heading">foundations > FONT-FAMILIES</h1>
+<hr>
+
+<p>Define the font families collection that will be used in the other layers.</p>
+<p>By default exists 3 font families, named as Primary, Secondary and Accent. The foundation includes a fallback font as well, used when the primary font families are not available in the client.</p>
+<p>All the default fonts are system fonts, but could be replaced by any other ones, like Google Fonts including the necessary style sheets.</p>
+
+<div class="cs-light c-code-snippet u-mb--large">
+{% highlight sass %}
+{% include haiticss/src/foundations/_foundations__font-families.scss %}{% endhighlight %}
+</div>

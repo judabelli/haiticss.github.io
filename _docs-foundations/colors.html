@@ -1,0 +1,72 @@
+---
+layout: docs
+template: t-docs
+title: Foundations > COLORS
+name: colors
+collection: docs-foundations
+---
+
+<h1 class="m-heading">foundations > COLORS</h1>
+<hr>
+<p>Define de colors that will be used in the layers.</p>
+<p>Are al divided in different groups and defined in separated files. Each group is set in a map, which is useful to create the different color utilities.</p>
+
+
+<h2 class="m-heading--small">Main color file</h2>
+<hr>
+<p>This file contains a map with all the groups maps. This code structure allows a multi-level loop.</p>
+
+<div class="cs-light c-code-snippet u-mb--large">
+{% highlight sass %}
+{% include haiticss/src/foundations/_foundations__colors.scss %}{% endhighlight %}
+</div>
+
+
+<h2 class="m-heading--small">Brand colors</h2>
+<hr>
+<p>The main brand colors, divided in primary, secondary and accent with by default. Each color has 5 shades.</p>
+<p>This structure could be changed or extended to accomplish any project specifications.</p>
+
+<div class="cs-light c-code-snippet u-mb--large">
+    {% highlight sass %}
+    {% include haiticss/src/foundations/_foundations__colors-brand.scss %}{% endhighlight %}
+</div>
+
+<h2 class="m-heading--small">Neutral colors</h2>
+<hr>
+<p>The neutral colors are useful to use in all projects. Are based in different shades of grey, that could be change under the project needs.</p>
+<p>White and black are also included, </p>
+
+<div class="cs-light c-code-snippet u-mb--large">
+    {% highlight sass %}
+    {% include haiticss/src/foundations/_foundations__colors-neutral.scss %}{% endhighlight %}
+</div>
+
+<h2 class="m-heading--small">State colors</h2>
+<hr>
+<p>The colors of all possible states: success, info, danger and warning. Each colors has also 5 shades defined.</p>
+
+<div class="cs-light c-code-snippet u-mb--large">
+    {% highlight sass %}
+    {% include haiticss/src/foundations/_foundations__colors-state.scss %}{% endhighlight %}
+</div>
+
+
+<h2 class="m-heading--small">Vendor colors</h2>
+<hr>
+<p>The vendor colors are the colors defined by 3rd party elements, like for example social networks. Can be defined with some shades too.</p>
+
+<div class="cs-light c-code-snippet u-mb--large">
+    {% highlight sass %}
+    {% include haiticss/src/foundations/_foundations__colors-vendor.scss %}{% endhighlight %}
+</div>
+
+<h2 class="m-heading--small">Other colors</h2>
+<hr>
+<p>Here is the place where is possible to set all the colors that are no related with the other categories.</p>
+<p>On example is the digital blue color used in links.</p>
+
+<div class="cs-light c-code-snippet u-mb--large">
+    {% highlight sass %}
+    {% include haiticss/src/foundations/_foundations__colors-other.scss %}{% endhighlight %}
+</div>
