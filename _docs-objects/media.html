@@ -1,0 +1,84 @@
+---
+layout: docs
+template: t-docs
+title: Objects > MEDIA
+name: media
+---
+
+<h1 class="m-heading">Objects > MEDIA</h1>
+<hr>
+
+<p>It's a very occurring pattern to have an image side-by-side with text or another content. The purpose of the media object is solve that situation.</p>
+
+<div class="o-media o-media--debug u-mb--medium" data-debug__text=".o-media">
+    <div class="o-media__img" data-debug__text=".o-media__img">
+        <img src="https://dummyimage.com/240x240/fff7ed/c25e00.jpg">
+    </div>
+    <div class="o-media__body" data-debug__text=".o-media__body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione animi doloribus voluptatum iste unde necessitatibus non, ipsam fuga! Libero voluptate fugiat eos adipisci. Doloremque possimus qui, libero distinctio id quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed a dolorem asperiores nam ipsum? Atque velit ipsam quo voluptatibus nesciunt id explicabo asperiores aut ipsa, recusandae, alias perferendis quas rem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione animi doloribus voluptatum iste unde necessitatibus non, ipsam fuga! Libero voluptate fugiat eos adipisci. Doloremque possimus qui, libero distinctio id quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed a dolorem asperiores nam ipsum? Atque velit ipsam quo voluptatibus nesciunt id explicabo asperiores aut ipsa, recusandae, alias perferendis quas rem.</p>
+    </div>
+</div>
+
+<div class="cs-light c-code-snippet u-mb--large">
+    {% highlight html %}
+    <div class="o-media">
+        <div class="o-media__img"></div>
+        <div class="o-media__body"></div>
+    </div>{% endhighlight %}
+</div>
+
+
+<h2 class="m-heading--small">Space modifiers</h2>
+<hr>
+<p>Sets the distance between the image and the content.</p>
+
+
+<select name="o-media--reverse" id="o-layout__select--reverse" class="js-select-replacer" data-select-replacer__target="#o-media__playground--space">
+    <option value="o-media--space-none">none</option>
+    <option value="o-media--space-tiny">tiny</option>
+    <option value="o-media--space-small">small</option>
+    <option value="o-media--space-medium" selected>medium</option>
+</select>
+
+
+<div id="o-media__playground--space">
+    <div class="o-media o-media--debug o-media--space-medium u-mb--medium" data-debug__text=".o-media.o-media--space-medium">
+        <div class="o-media__img" data-debug__text=".o-media__img">
+            <img src="https://dummyimage.com/240x240/fff7ed/c25e00.jpg">
+        </div>
+        <div class="o-media__body" data-debug__text=".o-media__body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione animi doloribus voluptatum iste unde necessitatibus non, ipsam fuga! Libero voluptate fugiat eos adipisci. Doloremque possimus qui, libero distinctio id quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed a dolorem asperiores nam ipsum? Atque velit ipsam quo voluptatibus nesciunt id explicabo asperiores aut ipsa, recusandae, alias perferendis quas rem.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione animi doloribus voluptatum iste unde necessitatibus non, ipsam fuga! Libero voluptate fugiat eos adipisci. Doloremque possimus qui, libero distinctio id quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed a dolorem asperiores nam ipsum? Atque velit ipsam quo voluptatibus nesciunt id explicabo asperiores aut ipsa, recusandae, alias perferendis quas rem.</p>
+        </div>
+    </div>
+    <div class="cs-light c-code-snippet u-mb--large">
+        {% highlight html %}
+        <div class="o-media o-media--space-medium">
+            <div class="o-media__img"></div>
+            <div class="o-media__body"></div>
+        </div>{% endhighlight %}
+    </div>
+</div>
+
+<h2 class="m-heading--small">Reverse modifier</h2>
+<hr>
+<p>Flips the object layout, putting the image at the right side and the content at the left. </p>
+
+<div class="o-media o-media--debug o-media--reverse u-mb--medium" data-debug__text=".o-media .o-media--reverse">
+    <div class="o-media__img" data-debug__text=".o-media__img">
+        <img src="https://dummyimage.com/240x240/fff7ed/c25e00.jpg">
+    </div>
+    <div class="o-media__body" data-debug__text=".o-media__body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione animi doloribus voluptatum iste unde necessitatibus non, ipsam fuga! Libero voluptate fugiat eos adipisci. Doloremque possimus qui, libero distinctio id quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed a dolorem asperiores nam ipsum? Atque velit ipsam quo voluptatibus nesciunt id explicabo asperiores aut ipsa, recusandae, alias perferendis quas rem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione animi doloribus voluptatum iste unde necessitatibus non, ipsam fuga! Libero voluptate fugiat eos adipisci. Doloremque possimus qui, libero distinctio id quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed a dolorem asperiores nam ipsum? Atque velit ipsam quo voluptatibus nesciunt id explicabo asperiores aut ipsa, recusandae, alias perferendis quas rem.</p>
+    </div>
+</div>
+
+<div class="cs-light c-code-snippet u-mb--large">
+    {% highlight html %}
+    <div class="o-media o-media--reverse">
+        <div class="o-media__img"></div>
+        <div class="o-media__body"></div>
+    </div>{% endhighlight %}
+</div>
