@@ -1,10 +1,9 @@
 
-$c-collapsible-menu__item--font-size:               s-core-px-to-rem(18px);
 $c-collapsible-menu__item--padding-interval:        $f-space--small;
 $c-collapsible-menu__collapse--duration:            $f-duration--fast;
+$c-collapsible-menu__section-header-arrow-size:     8px;
 
 .c-collapsible-menu {
-
 }
 
 .c-collapsible-menu__section {
@@ -20,8 +19,8 @@ $c-collapsible-menu__collapse--duration:            $f-duration--fast;
     align-self: center;
 
     margin-right: $c-collapsible-menu__item--padding-interval * 1;
-    width: 8px;
-    height: 8px;
+    width: s-core-px-to-em($c-collapsible-menu__section-header-arrow-size);
+    height: s-core-px-to-em($c-collapsible-menu__section-header-arrow-size);
 
     border-width: 2px 2px 0 0;
     border-color: $f-color__brand-primary--semi-dark;
@@ -59,7 +58,6 @@ $c-collapsible-menu__collapse--duration:            $f-duration--fast;
 }
 
 .c-docs-collapsible__link {
-  font-size: $c-collapsible-menu__item--font-size;
   display: block;
 
   &.is-selected {
