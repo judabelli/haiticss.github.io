@@ -20,13 +20,17 @@ collections:
     label: foundations
     output: true
     permalink: /docs/foundations/:name
+  docs-tools:
+      label: tools
+      output: true
+      permalink: /docs/tools/:name
   docs-objects:
     label: objects
     output: true
     permalink: /docs/objects/:name
-  docs-tools:
-    label: tools
+  docs-utilities:
+    label: utilities
     output: true
-    permalink: /docs/tools/:name
+    permalink: /docs/utilities/:name
   haiticss:
     output: false

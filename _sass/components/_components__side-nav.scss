@@ -14,6 +14,7 @@ $c-collapsible-menu__collapse--duration:            $f-duration--fast;
 .c-collapsible-menu__section-header {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 
   &::after {
     align-self: center;
@@ -30,6 +31,10 @@ $c-collapsible-menu__collapse--duration:            $f-duration--fast;
     transition: transform $c-collapsible-menu__collapse--duration;
 
     content: ' ';
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 
   .c-collapsible-menu__section-arrow:checked + &:after {
@@ -59,5 +64,16 @@ $c-collapsible-menu__collapse--duration:            $f-duration--fast;
 
   &.is-selected {
     text-decoration: underline;
+  }
+}
+
+
+// Contexts
+.c-side-nav {
+  &.cs-light,
+  .cs-light & {
+    .c-collapsible-menu__section-header:hover {
+      color: $cs-light__link-color--hover;
+    }
   }
 }
