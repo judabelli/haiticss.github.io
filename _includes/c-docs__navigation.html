@@ -3,13 +3,23 @@
         <h4 class="m-heading m-heading--small">Documentation</h4>
         <hr>
 
-        {% for currentCollection in site.collections %}
-            {% if currentCollection.label contains "docs-"%}
-                <a class="c-side-nav__item" href="/">{{ currentCollection.label | remove_first: "docs-"}}</a>
-                {% for menuItem in site[currentCollection.label] %}
-                <a class="c-side-nav__item c-side-nav__item--level-2" href="{{menuItem.url}}">{{menuItem.name}}</a>
-                {% endfor %}
-            {% endif %}
-        {% endfor %}
+        <div class="c-collapsible-menu">
+
+            {% for currentCollection in site.collections %}
+                {% if currentCollection.label contains "docs-"%}
+                <div class="c-collapsible-menu__section">
+                    <input id="{{currentCollection.label}}__ref" type="checkbox" class="c-collapsible-menu__section-arrow"{% if currentCollection.label != page.collection %} checked{% endif %}/>
+                    <label for="{{currentCollection.label}}__ref" class="c-collapsible-menu__section-header">
+                        {{ currentCollection.label | remove_first: "docs-"}}
+                    </label>
+                    <div class="c-docs-collapsible-menu__content">
+                        {% for menuItem in site[currentCollection.label] %}
+                        <a class="c-docs-collapsible__link{% if menuItem.name == page.name %} is-selected{% endif %}" href="{{menuItem.url}}">{{menuItem.name}}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
     </div>
 </nav>
