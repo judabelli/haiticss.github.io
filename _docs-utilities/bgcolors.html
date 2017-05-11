@@ -1,68 +1,36 @@
 ---
 layout: docs
 template: t-docs
-title: Utilities > ALIGNMENTS
-name: alignments
-collection: docs-utilities
+title: Utilities > BGCOLORS
+name: bgcolors
+collection: docs-bgcolors
 ---
 
-<h1 class="m-heading">utilities > ALIGNMENTS</h1>
+<h1 class="m-heading">utilities > BGCOLORS</h1>
 <hr>
 
-<p>The alignments utilities contain helper classes to force the CSS text align property.</p>
+<p>The bgcolors utilities contain helper classes to force the CSS background color property using the color maps.</p>
 
-<select name="u-alignments" id="u-alignments__select" class="js-select-replacer"
-        data-select-replacer__target="#u-alignments__playground">
-    <option value="u-align-left" selected>align-left</option>
-    <option value="u-align-center">align-center</option>
-    <option value="u-align-right">align-right</option>
+<select name="u-bg-colors" id="u-bg-colors__select" class="js-select-replacer"
+        data-select-replacer__target="#u-bg-colors__playground">
+    <option value="u-bg-color__brand-primary" selected>brand-primary</option>
+    <option value="u-bg-color__brand-secondary">brand-secondary</option>
+    <option value="u-bg-color__accent">brand-accent</option>
 </select>
 
-<div id="u-alignments__playground">
+<div id="u-bg-colors__playground">
 
-    <div class="u-align-left u-utilities--debug u-mb--medium" data-debug__text=".u-align-left">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus libero velit, quis ultrices eros ultrices
-        vitae. Nullam eu urna turpis. Fusce blandit ex augue, vel malesuada enim condimentum quis. Pellentesque dapibus
-        dolor a mauris elementum consectetur. Sed gravida blandit rhoncus. Donec tristique tortor nec facilisis
-        tristique.
-    </div>
+    <div class="u-bg-color__brand-primary u-utilities--debug u-bgcolors--debug u-mb--medium" data-debug__text=".u-bg-color__brand-primary"></div>
 
     <div class="cs-light c-code-snippet u-mb--large">
 {% highlight html %}
-<div class="u-align-left">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus libero velit, quis ultrices eros
-    ultrices vitae. Nullam eu urna turpis. Fusce blandit ex augue, vel malesuada enim condimentum quis.
-    Pellentesque dapibus dolor a mauris elementum consectetur. Sed gravida blandit rhoncus. Donec tristique
-    tortor nec facilisis tristique.
+<div class="u-bg-color__brand-primary">
 </div>{% endhighlight %}
     </div>
 </div>
 
-<p>Also creates classes for each defined breakpoint (resize the window to see it in action.</p>
-
-<select name="u-alignments--bp" id="u-alignments__select--bp" class="js-select-replacer"
-    data-select-replacer__target="#u-alignments__playground--bp">
-    <option value="u-align-right@md" selected>align-right@md</option>
-    <option value="u-align-center@sml">align-center@sml</option>
-    <option value="u-align-right@lg">align-right@lg</option>
-</select>
-
-<div id="u-alignments__playground--bp">
-
-    <div class="u-align-right@md u-utilities--debug u-mb--medium" data-debug__text=".u-align-right@md">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus libero velit, quis ultrices eros ultrices
-        vitae. Nullam eu urna turpis. Fusce blandit ex augue, vel malesuada enim condimentum quis. Pellentesque dapibus
-        dolor a mauris elementum consectetur. Sed gravida blandit rhoncus. Donec tristique tortor nec facilisis
-        tristique.
-    </div>
-
-    <div class="cs-light c-code-snippet u-mb--large">
-{% highlight html %}
-<div class="u-align-right@md">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus libero velit, quis ultrices eros
-    ultrices vitae. Nullam eu urna turpis. Fusce blandit ex augue, vel malesuada enim condimentum quis.
-    Pellentesque dapibus dolor a mauris elementum consectetur. Sed gravida blandit rhoncus. Donec tristique
-    tortor nec facilisis tristique.
-</div>{% endhighlight %}
-    </div>
+<p>The mixin loops for all the nested colors map and output the different classes:</p>
+<div class="cs-light c-code-snippet u-mb--large">
+    {% highlight scss %}
+    {% include haiticss/src/utilities/_utilities__bgcolors.scss %}{% endhighlight %}
 </div>

@@ -62,6 +62,7 @@
 @import "templates/templates";
 
 @import "{{site.haiticss-path}}src/utilities/utilities";
+@import "utilities/utilities";
 
 html {
   background-color: $f-color__brand-primary--ultra-light;

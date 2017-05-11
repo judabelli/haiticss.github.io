@@ -1,0 +1,50 @@
+---
+layout: docs
+template: t-docs
+title: Utilities > HIDDEN
+name: hidden
+collection: docs-hidden
+---
+
+<h1 class="m-heading">utilities > HIDDEN</h1>
+<hr>
+
+<p>The colors utilities contain helper classes Until force the CSS hidden property in certain breakpoints range.</p>
+<p>Using the properly class a from breakpoint (included) and until breakpoint (excluded) could be set.</p>
+
+<select name="u-hidden-from" id="u-hidden__select-from" class="js-select-replacer" data-select-replacer__target="#u-hidden__playground">
+    <option value="u-hidden-from" selected>Not set</option>
+    <option value="u-hidden-from@xs">From XS</option>
+    <option value="u-hidden-from@sm">From SM</option>
+    <option value="u-hidden-from@sml">From SML</option>
+    <option value="u-hidden-from@md">From MD</option>
+    <option value="u-hidden-from@lg">From LG</option>
+    <option value="u-hidden-from@xl">From XL</option>
+    <option value="u-hidden-from@xxl">From XXL</option>
+</select>
+
+<select name="u-hidden-until" id="u-hidden__select-until" class="js-select-replacer" data-select-replacer__target="#u-hidden__playground">
+    <option value="u-hidden-until" selected>Not set</option>
+    <option value="u-hidden-until@xs">Until XS</option>
+    <option value="u-hidden-until@sm">Until SM</option>
+    <option value="u-hidden-until@sml">Until SML</option>
+    <option value="u-hidden-until@md">Until MD</option>
+    <option value="u-hidden-until@lg">Until LG</option>
+    <option value="u-hidden-until@xl">Until XL</option>
+    <option value="u-hidden-until@xxl">Until XXL</option>
+</select>
+
+<div id="u-hidden__playground">
+
+    <div class="u-hidden-from u-hidden-until u-utilities--debug u-mb--medium" data-debug__text=".u-hidden-from.u-hidden-until">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
+
+    <div class="cs-light c-code-snippet u-mb--large u-mt--medium">
+{% highlight html %}
+<div class="u-hidden-from u-hidden-until">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</div>
+{% endhighlight %}
+    </div>
+</div>

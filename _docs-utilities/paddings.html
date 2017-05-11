@@ -1,0 +1,67 @@
+---
+layout: docs
+template: t-docs
+title: Utilities > PADDINGS
+name: paddings
+collection: docs-paddings
+---
+
+<h1 class="m-heading">utilities > PADDINGS</h1>
+<hr>
+
+<p>The paddings utilities contain helper classes to force the CSS padding-top, padding-right, padding-bottom and
+    padding-left
+    properties.</p>
+
+<select name="u-paddings" id="u-paddings__select" class="js-select-replacer"
+        data-select-replacer__target="#u-paddings__playground">
+    <option value="u-pt--medium">top padding</option>
+    <option value="u-pr--medium">right padding</option>
+    <option value="u-pb--medium">bottom padding</option>
+    <option value="u-pl--medium">left padding</option>
+    <option value="u-pv--medium" selected>vertical paddings</option>
+    <option value="u-ph--medium">horizontal paddings</option>
+</select>
+
+<div id="u-paddings__playground">
+
+    <div class="u-pv--medium u-utilities--debug u-mb--medium">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+    </div>
+
+    <div class="cs-light c-code-snippet u-mb--large">
+{% highlight html %}
+<div class="u-pv--medium">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+    laborum.
+</div>{% endhighlight %}
+    </div>
+</div>
+
+<p>In the playground you can change throught the different medium spaces utilities, ineed you can find the same
+    utilities for all spaces.</p>
+<p>The mixin loop all defined spaces and outputs helper classes for each space and utility.</p>
+
+<p>The mixin loops for all the nested colors map and output the different classes:</p>
+
+<div class="cs-light c-code-snippet u-mb--large">
+{% highlight scss %}
+{% include haiticss/src/utilities/_utilities__paddings.scss %}{% endhighlight %}
+</div>
+
+<p>So you can find utilities such as:</p>
+<ul>
+    <li>.u-pb-huge</li>
+    <li>.u-pl-small</li>
+    <li>.u-pt-tiny</li>
+    <li>.u-pv-none</li>
+    <li>.u-ph-medium</li>
+    <li>and all the others...</li>
+</ul>

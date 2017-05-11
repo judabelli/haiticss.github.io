@@ -1,0 +1,14 @@
+// Object Params
+.u-margins--debug {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: $f-space--medium;
+
+  @include o-docs__main--outline();
+  @include o-docs__main--bg();
+
+  .u-margins__content--debug {
+    @include o-docs__secondary--outline();
+    @include o-docs__secondary--bg();
+  }
+}
