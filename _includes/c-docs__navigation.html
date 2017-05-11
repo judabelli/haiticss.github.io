@@ -3,23 +3,6 @@
         <h4 class="m-heading m-heading--small">Documentation</h4>
         <hr>
 
-        <div class="c-collapsible-menu">
-            {% assign sortedCollections = site.collections | sort:"order" %}
-            {% for currentCollection in sortedCollections %}
-                {% if currentCollection.label contains "docs-"%}
-                <div class="c-collapsible-menu__section">
-                    <input id="{{currentCollection.label}}__ref" type="checkbox" class="c-collapsible-menu__section-arrow"{% if currentCollection.label != page.collection %} checked{% endif %}/>
-                    <label for="{{currentCollection.label}}__ref" class="c-collapsible-menu__section-header">
-                        {{ currentCollection.label | remove_first: "docs-"}}
-                    </label>
-                    <div class="c-docs-collapsible-menu__content">
-                        {% for menuItem in site[currentCollection.label] %}
-                        <a class="c-docs-collapsible__link{% if menuItem.name == page.name %} is-selected{% endif %}" href="{{menuItem.url}}">{{menuItem.name}}</a>
-                        {% endfor %}
-                    </div>
-                </div>
-                {% endif %}
-            {% endfor %}
-        </div>
+        {% include c-collapsible-menu.html collections=site.collections %}
     </div>
 </nav>

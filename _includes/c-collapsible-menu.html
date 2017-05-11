@@ -1,0 +1,11 @@
+<div class="c-collapsible-menu">
+    {% assign sortedCollections = include.collections | sort:"order" %}
+    {% for currentCollection in sortedCollections %}
+    {% if currentCollection.label contains "docs-"%}
+
+    {% assign sectionItems = site[currentCollection.label] %}
+    {% include c-collapsible-menu__section.html sectionName=currentCollection.label elements=sectionItems %}
+
+    {% endif %}
+    {% endfor %}
+</div>

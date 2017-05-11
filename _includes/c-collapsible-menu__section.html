@@ -1,0 +1,36 @@
+<div class="c-collapsible-menu__section">
+
+    {% assign menuState = "" %}
+    {% if include.subtree%}
+        {% unless page.parent %}
+            {% assign menuState = "checked" %}
+        {% endunless %}
+    {% else %}
+        {% if include.sectionName != page.collection %}
+            {% assign menuState = "checked" %}
+        {% endif %}
+    {% endif %}
+
+
+    <input id="{{currentCollection.label}}_{{menuItem.name}}__ref" type="checkbox" class="c-collapsible-menu__section-arrow" {{menuState}}/>
+    <label for="{{currentCollection.label}}_{{menuItem.name}}__ref" class="c-collapsible-menu__section-header">
+        {{ include.sectionName | remove_first: "docs-"}}
+    </label>
+    <div class="c-docs-collapsible-menu__content">
+        {% for menuItem in include.elements %}
+            {% if menuItem.parent %}
+                {% if include.subtree %}
+                    <a class="c-docs-collapsible__link{% if menuItem.name == page.name %} is-selected{% endif %}" href="{{menuItem.url}}">{{menuItem.name}}</a>
+                {% endif %}
+            {% else %}
+                {% if menuItem.has-subitems %}
+                    {% assign itemName = menuItem.name %}
+                    {% assign subitems = include.elements | where:"parent",itemName %}
+                    {% include c-collapsible-menu__section.html sectionName=menuItem.name elements=subitems subtree=true %}
+                {% else %}
+                    <a class="c-docs-collapsible__link{% if menuItem.name == page.name %} is-selected{% endif %}" href="{{menuItem.url}}">{{menuItem.name}}</a>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

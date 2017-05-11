@@ -16,11 +16,11 @@ google_analytics: UA-97633338-1
 
 # Collections
 collections:
-  docs-color-schemes:
-    label: color-schemes
+  docs-settings:
+    label: settings
     output: true
-    permalink: /docs/color-schemes/:name
-    order: 8
+    permalink: /docs/settings/:name
+    order: 1
   docs-foundations:
     label: foundations
     output: true
@@ -32,15 +32,20 @@ collections:
       permalink: /docs/material/:name
       order: 3
   docs-tools:
-      label: tools
-      output: true
-      permalink: /docs/tools/:name
-      order: 4
+    label: tools
+    output: true
+    permalink: /docs/tools/:name
+    order: 4
   docs-objects:
     label: objects
     output: true
     permalink: /docs/objects/:name
     order: 6
+  docs-color-schemes:
+    label: color-schemes
+    output: true
+    permalink: /docs/color-schemes/:name
+    order: 8
   docs-utilities:
     label: utilities
     output: true
