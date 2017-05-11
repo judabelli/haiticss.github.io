@@ -49,12 +49,14 @@
 
 @import "{{site.haiticss-path}}src/generic/generic";
 @import "{{site.haiticss-path}}src/elements/elements";
-//@import "{{site.haiticss-path}}material/material";
+
+@import "{{site.haiticss-path}}src/material/material";
 @import "material/material";
 
 @import "{{site.haiticss-path}}src/objects/objects";
 @import "objects/objects";
 
+@import "{{site.haiticss-path}}src/color-schemes/color-schemes";
 @import "color-schemes/color-schemes";
 
 @import "components/components";
@@ -78,12 +80,6 @@ a {
 
 p + p {
   margin-top: $f-space--small * -1;
-}
-
-hr {
-  border: none;
-  height: 1px;
-  background-color: $e-document__body--color;
 }
 
 .o-flag__img {

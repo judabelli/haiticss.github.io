@@ -16,21 +16,35 @@ google_analytics: UA-97633338-1
 
 # Collections
 collections:
+  docs-color-schemes:
+    label: color-schemes
+    output: true
+    permalink: /docs/color-schemes/:name
+    order: 8
   docs-foundations:
     label: foundations
     output: true
     permalink: /docs/foundations/:name
+    order: 2
+  docs-material:
+      label: material
+      output: true
+      permalink: /docs/material/:name
+      order: 3
   docs-tools:
       label: tools
       output: true
       permalink: /docs/tools/:name
+      order: 4
   docs-objects:
     label: objects
     output: true
     permalink: /docs/objects/:name
+    order: 6
   docs-utilities:
     label: utilities
     output: true
     permalink: /docs/utilities/:name
+    order: 9
   haiticss:
     output: false
