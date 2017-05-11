@@ -26,11 +26,16 @@ collections:
     output: true
     permalink: /docs/foundations/:name
     order: 2
+  docs-material:
+      label: material
+      output: true
+      permalink: /docs/material/:name
+      order: 3
   docs-tools:
       label: tools
       output: true
       permalink: /docs/tools/:name
-      order: 3
+      order: 4
   docs-objects:
     label: objects
     output: true
