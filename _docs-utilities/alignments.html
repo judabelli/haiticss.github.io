@@ -9,11 +9,60 @@ collection: docs-utilities
 <h1 class="m-heading">utilities > ALIGNMENTS</h1>
 <hr>
 
-<p>The aspect ratios foundations define the proportional relationships between width and height.</p>
-<p>Oriented to support some objects, material and components (specially media related), includes the standard ratios and the golden rule.</p>
-<p>A safe checking is included to ensure that the ratio value is actually a number.</p>
+<p>The alignments utilities contain helper classes to force the CSS text align property.</p>
 
-<div class="cs-light c-code-snippet u-mb--large">
-{% highlight scss %}
-{% include haiticss/src/foundations/_foundations__aspect-ratios.scss %}{% endhighlight %}
+<select name="u-alignments" id="u-alignments__select" class="js-select-replacer"
+        data-select-replacer__target="#u-alignments__playground">
+    <option value="u-align-left" selected>align-left</option>
+    <option value="u-align-center">align-center</option>
+    <option value="u-align-right">align-right</option>
+</select>
+
+<div id="u-alignments__playground">
+
+    <div class="u-align-left u-utilities--debug u-mb--medium" data-debug__text=".u-align-left">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus libero velit, quis ultrices eros ultrices
+        vitae. Nullam eu urna turpis. Fusce blandit ex augue, vel malesuada enim condimentum quis. Pellentesque dapibus
+        dolor a mauris elementum consectetur. Sed gravida blandit rhoncus. Donec tristique tortor nec facilisis
+        tristique.
+    </div>
+
+    <div class="cs-light c-code-snippet u-mb--large">
+{% highlight html %}
+<div class="u-align-left">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus libero velit, quis ultrices eros
+    ultrices vitae. Nullam eu urna turpis. Fusce blandit ex augue, vel malesuada enim condimentum quis.
+    Pellentesque dapibus dolor a mauris elementum consectetur. Sed gravida blandit rhoncus. Donec tristique
+    tortor nec facilisis tristique.
+</div>{% endhighlight %}
+    </div>
+</div>
+
+<p>Also creates classes for each defined breakpoint (resize the window to see it in action).</p>
+
+<select name="u-alignments--bp" id="u-alignments__select--bp" class="js-select-replacer"
+    data-select-replacer__target="#u-alignments__playground--bp">
+    <option value="u-align-right@md" selected>align-right@md</option>
+    <option value="u-align-center@sml">align-center@sml</option>
+    <option value="u-align-right@lg">align-right@lg</option>
+</select>
+
+<div id="u-alignments__playground--bp">
+
+    <div class="u-align-right@md u-utilities--debug u-mb--medium" data-debug__text=".u-align-right@md">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus libero velit, quis ultrices eros ultrices
+        vitae. Nullam eu urna turpis. Fusce blandit ex augue, vel malesuada enim condimentum quis. Pellentesque dapibus
+        dolor a mauris elementum consectetur. Sed gravida blandit rhoncus. Donec tristique tortor nec facilisis
+        tristique.
+    </div>
+
+    <div class="cs-light c-code-snippet u-mb--large">
+{% highlight html %}
+<div class="u-align-right@md">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus libero velit, quis ultrices eros
+    ultrices vitae. Nullam eu urna turpis. Fusce blandit ex augue, vel malesuada enim condimentum quis.
+    Pellentesque dapibus dolor a mauris elementum consectetur. Sed gravida blandit rhoncus. Donec tristique
+    tortor nec facilisis tristique.
+</div>{% endhighlight %}
+    </div>
 </div>

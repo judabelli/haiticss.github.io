@@ -1,0 +1,36 @@
+---
+layout: docs
+template: t-docs
+title: Utilities > BGCOLORS
+name: bgcolors
+collection: docs-bgcolors
+---
+
+<h1 class="m-heading">utilities > BGCOLORS</h1>
+<hr>
+
+<p>The bgcolors utilities contain helper classes to force the CSS background color property using the color maps.</p>
+
+<select name="u-bg-colors" id="u-bg-colors__select" class="js-select-replacer"
+        data-select-replacer__target="#u-bg-colors__playground">
+    <option value="u-bg-color__brand-primary" selected>brand-primary</option>
+    <option value="u-bg-color__brand-secondary">brand-secondary</option>
+    <option value="u-bg-color__accent">brand-accent</option>
+</select>
+
+<div id="u-bg-colors__playground">
+
+    <div class="u-bg-color__brand-primary u-utilities--debug u-bgcolors--debug u-mb--medium" data-debug__text=".u-bg-color__brand-primary"></div>
+
+    <div class="cs-light c-code-snippet u-mb--large">
+{% highlight html %}
+<div class="u-bg-color__brand-primary">
+</div>{% endhighlight %}
+    </div>
+</div>
+
+<p>The mixin loops for all the nested colors map and output the different classes:</p>
+<div class="cs-light c-code-snippet u-mb--large">
+    {% highlight scss %}
+    {% include haiticss/src/utilities/_utilities__bgcolors.scss %}{% endhighlight %}
+</div>

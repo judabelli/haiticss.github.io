@@ -10,3 +10,8 @@
    ========================================================================== */
 
 $s-config__env:                       "prod" !default;
+
+// Utilities override
+
+$u-widths__offset-push--enabled:      true !default;
+$u-widths__offset-pull--enabled:      true !default;

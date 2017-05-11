@@ -1,0 +1,60 @@
+---
+layout: docs
+template: t-docs
+title: Utilities > MARGINS
+name: margins
+collection: docs-margins
+---
+
+<h1 class="m-heading">utilities > MARGINS</h1>
+<hr>
+
+<p>The margins utilities contain helper classes to force the CSS margin-top, margin-right, margin-bottom and margin-left
+    properties.</p>
+
+<select name="u-margins" id="u-margins__select" class="js-select-replacer u-mb--medium"
+        data-select-replacer__target="#u-margins__playground">
+    <option value="u-mt--medium">top margin</option>
+    <option value="u-mr--medium">right margin</option>
+    <option value="u-mb--medium">bottom margin</option>
+    <option value="u-ml--medium">left margin</option>
+    <option value="u-mv--medium" selected>vertical margins</option>
+    <option value="u-mh--medium">horizontal margins</option>
+</select>
+
+<div id="u-margins__playground">
+
+    <div class="u-margins--debug">
+        <div class="u-mv--medium u-margins__content--debug">
+            Div with the class <code>.u-mv--medium<code> applied
+        </div>
+    </div>
+
+    <div class="cs-light c-code-snippet u-mb--large">
+{% highlight html %}
+<div class="u-mv--medium">
+    Div with the class .u-mv--medium applied
+</div>
+{% endhighlight %}
+    </div>
+</div>
+
+<p>In the playground you can change throught the different medium spaces utilities, ineed you can find the same utilities
+    for all spaces.</p>
+<p>The mixin loop all defined spaces and outputs helper classes for each space and utility.</p>
+
+<p>The mixin loops for all the nested colors map and output the different classes:</p>
+<div class="cs-light c-code-snippet u-mb--large">
+{% highlight scss %}
+{% include haiticss/src/utilities/_utilities__margins.scss %}{% endhighlight %}
+</div>
+
+<p>So you can find utilities such as:</p>
+<ul>
+    <li>.u-mb-huge</li>
+    <li>.u-ml-small</li>
+    <li>.u-mt-tiny</li>
+    <li>.u-mv-none</li>
+    <li>.u-mh-medium</li>
+    <li>and all the others...</li>
+</ul>
