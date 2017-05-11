@@ -49,7 +49,8 @@
 
 @import "{{site.haiticss-path}}src/generic/generic";
 @import "{{site.haiticss-path}}src/elements/elements";
-//@import "{{site.haiticss-path}}material/material";
+
+@import "{{site.haiticss-path}}src/material/material";
 @import "material/material";
 
 @import "{{site.haiticss-path}}src/objects/objects";
