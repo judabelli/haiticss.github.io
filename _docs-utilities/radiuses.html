@@ -1,0 +1,34 @@
+---
+layout: docs
+template: t-docs
+title: Utilities > RADIUSES
+name: radiuses
+collection: docs-utilities
+---
+
+<h1 class="m-heading">utilities > RADIUSES</h1>
+<hr>
+
+<p>The radiuses utilities contain helper classes to force the CSS border-radius property.</p>
+
+<select name="u-radiuses" id="u-radiuses__select" class="js-select-replacer"
+        data-select-replacer__target="#u-radiuses__playground">
+    <option value="u-radius__none" selected>none</option>
+    <option value="u-radius__small">small</option>
+    <option value="u-radius__medium">medium</option>
+    <option value="u-radius__large">large</option>
+</select>
+
+<div id="u-radiuses__playground">
+    <div class="u-utilities--debug u-p--medium u-ml--tiny o-layout o-layout--center u-mb--medium" data-debug__text=".u-radius__none">
+        <div class="u-radius__none u-p--medium o-layout__item  u-bg-color__brand-primary--dark  u-1/5">
+        </div>
+    </div>
+    <div class="cs-light c-code-snippet u-mb--large">
+{% highlight html %}
+<div>
+    <div class="u-radius__none">
+    </div>
+</div>{% endhighlight %}
+    </div>
+</div>

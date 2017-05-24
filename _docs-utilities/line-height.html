@@ -1,0 +1,40 @@
+---
+layout: docs
+template: t-docs
+title: Utilities > LINE-HEIGHTS
+name: line-heights
+collection: docs-utilities
+---
+
+<h1 class="m-heading">utilities > LINE-HEIGHTS</h1>
+<hr>
+
+<p>The line heights utilities contain helper classes to force the CSS line height property.</p>
+
+<select name="u-line-heights" id="u-line-heights__select" class="js-select-replacer"
+        data-select-replacer__target="#u-line-heights__playground">
+    <option value="u-line-height__tiny" selected>xxs</option>
+    <option value="u-line-height__small">xs</option>
+    <option value="u-line-height__medium">s</option>
+    <option value="u-line-height__large">m</option>
+</select>
+
+<div id="u-line-heights__playground">
+
+    <div class="u-line-height__tiny u-utilities--debug u-p--medium u-mb--medium" data-debug__text=".u-line-height__tiny">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus libero velit, quis ultrices eros ultrices
+        vitae. Nullam eu urna turpis. Fusce blandit ex augue, vel malesuada enim condimentum quis. Pellentesque dapibus
+        dolor a mauris elementum consectetur. Sed gravida blandit rhoncus. Donec tristique tortor nec facilisis
+        tristique.
+    </div>
+
+    <div class="cs-light c-code-snippet u-mb--large">
+{% highlight html %}
+<div class="u-line-height__tiny">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus libero velit, quis ultrices eros
+    ultrices vitae. Nullam eu urna turpis. Fusce blandit ex augue, vel malesuada enim condimentum quis.
+    Pellentesque dapibus dolor a mauris elementum consectetur. Sed gravida blandit rhoncus. Donec tristique
+    tortor nec facilisis tristique.
+</div>{% endhighlight %}
+    </div>
+</div>
